@@ -12,11 +12,11 @@ const App = () => {
 
   return (
     <>
-   <View>
-   <StatusBar barstyle='dark-content' backgrounfColor={'transparent'}/>
-   </View>
+  
     <SafeAreaView>
-      
+    <View>
+   <StatusBar />
+   </View>
         <ScrollView>
        <Flatlist/>
         <View style={{flexDirection:'row',justifyContent:"center"}}>
