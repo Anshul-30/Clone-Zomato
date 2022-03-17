@@ -11,13 +11,17 @@ import Flatlist from './components/Flatlist'
 const App = () => {
 
   return (
+    <>
+   <View>
+   <StatusBar barstyle='dark-content' backgrounfColor={'transparent'}/>
+   </View>
     <SafeAreaView>
-      <StatusBar/>
+      
         <ScrollView>
        <Flatlist/>
         <View style={{flexDirection:'row',justifyContent:"center"}}>
-        <Image source={require('/Users/admin/Desktop/Project/Zomato/Images/zomato-coupons.jpg')} style={styles.image} />
-        <Image source={require('/Users/admin/Desktop/Project/Zomato/Images/zomato-offer-code-2020.jpeg')} style={styles.image} />
+        <Image source={require('./Images/zomato-coupons.jpg')} style={styles.image} />
+        <Image source={require('./Images/zomato-offer-code-2020.jpeg')} style={styles.image} />
         </View>
         <View >
           <Text numberOfLines={1} style={styles.text3}>Eat what makes you happy</Text>
@@ -33,7 +37,7 @@ const App = () => {
         
       </ScrollView>
       <Bottompart/>
-    </SafeAreaView>
+    </SafeAreaView></>
   )
 }
 export default App;

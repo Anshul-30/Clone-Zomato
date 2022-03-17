@@ -12,7 +12,7 @@ const Card = ()=>
            renderItem={(element)=>{
                return(
                 
-                <View style={{margin:10,justifyContent:'center',height:300,borderColor:'grey',borderWidth:0.3,borderRadius:15}} >
+                <View style={{margin:10,justifyContent:'center',height:300,borderColor:'grey',borderRadius:15,backgroundColor:'white',elevation:5}} >
                     <View style={{alignItems:"center"}}>
                         <Image source={element.item.url} style={{justifyContent:'center',height:200,width:340,borderTopLeftRadius:15,borderTopRightRadius:15}} />
                        
