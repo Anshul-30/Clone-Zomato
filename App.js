@@ -24,7 +24,7 @@ const App = () => {
         </View>
        <Grid/>
         <View style={styles.seemore}>
-          <Text style={styles.textmore}>see more </Text>
+          <Text style={styles.textmore}>see more</Text>
           <Image source={require('./Images/down.png') } style={{height:15,width:15,marginTop:11}}/>
         </View>
         <Text style={styles.text3}>637 restaurants around you</Text>
