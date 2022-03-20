@@ -7,12 +7,12 @@ const styles = StyleSheet.create({
         height:width/20,
         width:width/20
     },
-    imagecard:{
-        marginTop:10,
-        marginRight:5,
-        height:width/15,
-        width:width/15
-    },
+    imagecard:{justifyContent:'center',
+    height:200,
+    width:340,
+    borderTopLeftRadius:15,
+    borderTopRightRadius:15
+},
     bckimg:{
         height: width/1.9,
         width: width/1.1,
@@ -179,7 +179,22 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-between'
     },
-    
+    card:{
+        margin:10,
+            justifyContent:'center',
+        height:300,
+        borderColor:'grey',
+        borderRadius:15,
+        backgroundColor:'white',
+        elevation:5
+    },
+    iconimage:{height:20,width:20,marginTop:5,marginRight:5},
+    text5:{
+        fontWeight:'bold',
+        color:'black',
+        fontSize:18,
+        marginLeft:5
+    },
     image2:{
         height:width/15,
         width:width/15,

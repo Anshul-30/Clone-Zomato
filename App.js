@@ -12,12 +12,13 @@ const App = () => {
 
   return (
     <>
+    {/* <View>
+  // <StatusBar barStyle='dark-content' backgroundColor={'transparent'} 
+   </View> */}
   
     <SafeAreaView>
-    <View>
-   <StatusBar />
-   </View>
-        <ScrollView>
+    <StatusBar  />
+        <ScrollView >
        <Flatlist/>
         <View style={{flexDirection:'row',justifyContent:"center"}}>
         <Image source={require('./Images/zomato-coupons.jpg')} style={styles.image} />
