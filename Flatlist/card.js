@@ -9,8 +9,11 @@ const CARD=[
         fav:require('../Images/heart.png'),
         left:require('../Images/right-arrow(2).png'),
         arrival:'39 mins | 7 km',
-        offer:'15% OFF  Upto rs 45',
-        dis:require('../Images/discount.png')
+        offer1:'15% OFF  ',
+        offer2:'Up to rs 35',
+        dis:require('../Images/discount.png'),
+        loc:'Fast Food',
+        price:'rs 250 for one'
         
     },
     {
@@ -23,8 +26,11 @@ const CARD=[
         left:require('../Images/right-arrow(2).png'),
         pro:'Promoted',
         arrival:'39 mins | 7 km',
-        offer:'15% OFF  Upto rs 45',
-        dis:require('../Images/discount.png')
+        offer1:'15% OFF',
+        offer2:'Up to rs 35',
+        dis:require('../Images/discount.png'),
+        loc:'Fast Food',
+        price:'rs 250 for one'
     },
     {
         id:'3',
@@ -36,8 +42,11 @@ const CARD=[
         left:require('../Images/right-arrow(2).png'),
         pro:'Promoted',
         arrival:'39 mins | 7 km',
-        offer:'10% OFF  Upto Rs 30',
-        dis:require('../Images/discount.png')
+        offer1:'10% OFF',
+        offer2:'Up to rs 35',
+        dis:require('../Images/discount.png'),
+        loc:'Fast Food',
+        price:'rs 250 for one'
     },
     {
         id:'4',
@@ -49,8 +58,11 @@ const CARD=[
         left:require('../Images/right-arrow(2).png'),
         pro:'Promoted',
         arrival:'39 mins | 7 km',
-        offer:'15% OFF Up to rs 45',
-        dis:require('../Images/discount.png')
+        offer1:'15% OFF',
+        offer2:'Up to rs 35',
+        dis:require('../Images/discount.png'),
+        loc:'Fast Food',
+        price:'rs 250 for one'
    
     },
     {
@@ -63,8 +75,11 @@ const CARD=[
         left:require('../Images/right-arrow(2).png'),
         pro:'Promoted',
         arrival:'39 mins | 7 km',
-        offer:'30% OFF Up to Rs 75',
-        dis:require('../Images/discount.png')
+        offer1:'30% OFF ',
+        offer2:'Up to rs 35',
+        dis:require('../Images/discount.png'),
+        price:'rs 250 for one',
+        loc:'Fast Food',
         
     },]
     export default CARD

@@ -32,15 +32,25 @@ const Card = ()=>
                         <Text style={{color:'black'}}>{element.item.arrival}</Text>
                         </View>
                         <View style={styles.offer}>
+                        <View style={{flexDirection:'row'}}>
                         <Image source={element.item.dis} style={styles.dis}/>
-                           <Text style={{color:'white'}}>{element.item.offer}</Text>
-                            </View>
+                        <Text style={{color:'white'}}>{element.item.offer1}</Text>
+                        </View>
+                        <View>
+                               <Text style={{color:'white',textAlign:'center'}}>{element.item.offer2}</Text>
+                     </View>
+                           </View>
                     </View>
-                    <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
+                    <View style={{flex:1}}>
+                    <View style={{flex:.5,flexDirection:'row',justifyContent:'space-between'}}>
                         <Text style={styles.text5}>{element.item.title}</Text>
                         <Image style={styles.iconimage}source={element.item.img}/>
                     </View>
-                       
+                    <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:15,marginRight:15}}>
+                        <Text>{element.item.loc}</Text>
+                        <Text>{element.item.price}</Text>
+                        </View>
+                    </View>   
                 </View>
             
                )

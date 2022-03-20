@@ -14,9 +14,10 @@ const styles = StyleSheet.create({
     borderTopRightRadius:15
 },
 dis:{
-    height:15,
-    width:15,
-    marginHorizontal:8
+    height:10,
+    width:10,
+     marginHorizontal:8,
+     marginVertical:5
 },
     bckimg:{
         height: width/1.9,
@@ -202,7 +203,7 @@ dis:{
     text5:{
         fontWeight:'bold',
         color:'black',
-        fontSize:18,
+        fontSize:20,
         marginLeft:15,
         marginTop:10
     },
@@ -270,8 +271,8 @@ offer:{
     bottom:10,
     borderTopRightRadius:5,
     borderBottomRightRadius:5,
-    alignItems:'center',
-    flexDirection:'row'
+    // alignItems:'center',
+    // flexDirection:'row'
 },
     image2:{
         height:width/15,
