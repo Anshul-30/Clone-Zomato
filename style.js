@@ -13,6 +13,11 @@ const styles = StyleSheet.create({
     borderTopLeftRadius:15,
     borderTopRightRadius:15
 },
+dis:{
+    height:15,
+    width:15,
+    marginHorizontal:8
+},
     bckimg:{
         height: width/1.9,
         width: width/1.1,
@@ -188,13 +193,86 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         elevation:5
     },
-    iconimage:{height:20,width:20,marginTop:5,marginRight:5},
+    iconimage:
+    {
+        height:20,
+        width:20,
+        marginTop:10,
+        marginRight:15},
     text5:{
         fontWeight:'bold',
         color:'black',
         fontSize:18,
-        marginLeft:5
+        marginLeft:15,
+        marginTop:10
     },
+    pro:{
+        position:'absolute',
+        left:15,
+        top:15,
+        height:20,
+        width:70,
+        backgroundColor:'black',
+        opacity:.6,
+        alignItems:'center',
+        borderRadius:4
+    },
+    fav:{
+        position:'absolute', 
+        right:15,
+        top:15,
+        backgroundColor:'white',
+        height:30,
+        width:30,
+        borderRadius:15,
+        alignItems:'center',
+        justifyContent:'center'
+},
+leftarrow:{
+    height:30,
+    width:30 ,
+    position:'absolute',
+    zIndex:500,
+    backgroundColor:'black',
+    opacity:.6,
+    borderRadius:15,
+    left:15,
+    justifyContent:'center',
+    alignItems:'center'
+},
+rightarrow:{
+    height:30,
+    width:30,
+    position:'absolute',
+    zIndex:201,
+    right:15,
+    backgroundColor:'black',
+    opacity:.6,
+    borderRadius:15,
+    alignItems:'center',
+    justifyContent:'center'
+},
+arrival:{
+    position:'absolute',
+    right:15,
+    bottom:10,
+    backgroundColor:'white',
+    height:20,
+    width:105,
+    justifyContent:'center',
+    flexDirection:'row'
+},
+offer:{
+    height:40,
+    width:100,
+    backgroundColor:'cornflowerblue',
+    position:'absolute',
+    bottom:10,
+    borderTopRightRadius:5,
+    borderBottomRightRadius:5,
+    alignItems:'center',
+    flexDirection:'row'
+},
     image2:{
         height:width/15,
         width:width/15,

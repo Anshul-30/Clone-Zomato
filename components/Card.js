@@ -15,14 +15,27 @@ const Card = ()=>
             <View style={styles.card} >
                     <View style={{alignItems:"center" ,flexDirection:'row'}}>
                         <Image source={element.item.url} style={styles.imagecard} />
-                        <View style={{position:'absolute',left:15,top:15,height:20,width:70,backgroundColor:'black',opacity:.6,alignItems:'center',borderRadius:4}}>
+                        <View style={styles.pro}>
                             <Text style={{color:'white',fontSize:13}}>{element.item.pro}</Text>
                             </View>
-                        <View style={{height:30,width:30 ,position:'absolute',zIndex:500,backgroundColor:'black',opacity:.6,borderRadius:15,left:5,justifyContent:'center',alignItems:'center'}}>
-                        <Image source={element.item.uri} style={{height:20,width:20, }}/></View>
-                    <View style={{height:30,width:30,position:'absolute',zIndex:201,right:5,backgroundColor:'black',opacity:.6,borderRadius:15,alignItems:'center',justifyContent:'center'}}>
+                            <View style={styles.fav}>
+                                <Image source={element.item.fav} style={{height:15,width:15}}/>
+                                </View>
+                        <View style={styles.leftarrow}>
+                        <Image source={element.item.uri} style={{height:20,width:20, }}/>
+                        </View>
+                    <View style={styles.rightarrow}>
                         <Image source={element.item.left} style={{height:20,width:20 ,}}/>
-                    </View></View>
+                    </View>
+                    <View style={styles.arrival}>
+                        
+                        <Text style={{color:'black'}}>{element.item.arrival}</Text>
+                        </View>
+                        <View style={styles.offer}>
+                        <Image source={element.item.dis} style={styles.dis}/>
+                           <Text style={{color:'white'}}>{element.item.offer}</Text>
+                            </View>
+                    </View>
                     <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
                         <Text style={styles.text5}>{element.item.title}</Text>
                         <Image style={styles.iconimage}source={element.item.img}/>
