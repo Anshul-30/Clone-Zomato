@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
     imagecard: {
         justifyContent: 'center',
         height: 200,
-        width: 340,
+        width:width/1.06,
+        // width: 340,
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15
     },
@@ -69,11 +70,14 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         flexDirection: 'row',
         borderColor: 'grey',
-        // borderWidth: 0.3,
-        paddingHorizontal: 5,
+        borderWidth: 0.3,
+        padding:5,
         borderRadius: 7,
+        alignItems:"center",
         backgroundColor:'white',
-        elevation:3
+        // shadowColor:'black',
+        // shadowOffset:{height:15,width:200}
+        // elevation:3
     },
     searchtxt: {
         textAlign: 'center', 
@@ -105,11 +109,11 @@ const styles = StyleSheet.create({
     searchicon: {
         height: width / 20,
         width: width / 20,
-        marginTop: 17,
-        marginLeft:7
+        marginLeft:7,
+        // transform:[{rotate:'20deg'}]
     },
     mike: {
-        marginTop:18,
+       
         height: width / 23,
         width: width / 23,
 
@@ -131,7 +135,8 @@ const styles = StyleSheet.create({
 
     image: {
         height: 100,
-        width: 160,
+        width:width/2.2,
+        // width: 160,
         marginRight: 8,
         marginLeft: 8,
         borderRadius: 20
@@ -206,8 +211,13 @@ const styles = StyleSheet.create({
         marginTop: 5
     },
     main: {
-
-        height: '42%',
+        elevation:15,
+        // borderTopWidth:.3,
+        // borderColor:'grey',
+        backgroundColor:'white',
+        // height: '42%',
+        // height:'28%',
+       
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
@@ -218,7 +228,8 @@ const styles = StyleSheet.create({
         borderColor: 'grey',
         borderRadius: 15,
         backgroundColor: 'white',
-        elevation: 5
+        elevation: 5,
+      
     },
     iconimage:
     {

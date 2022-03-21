@@ -8,6 +8,7 @@ import Statusbar from './components/Statusbar'
 import Bottompart from './components/Bottompart'
 import Grid from './components/Grid'
 import Flatlist from './components/Flatlist'
+import Screen from './components/Screen'
 const App = () => {
 
   return (
@@ -15,8 +16,11 @@ const App = () => {
    <View>
      <StatusBar  barStyle='dark-content' backgroundColor={'transparent'}/>
    </View>
-    <SafeAreaView>
+    <SafeAreaView style={{flex:1}}>
     <Statusbar  />
+    {/* <ScrollView>
+    <Screen/>
+    </ScrollView> */}
         <ScrollView >
        <Flatlist/>
         <View style={{flexDirection:'row',justifyContent:"center"}}>
@@ -35,7 +39,7 @@ const App = () => {
 
         <Card />
         <Card />
-        <Card />
+        <Card /> 
       </ScrollView>
       <Bottompart/>
     </SafeAreaView></>
