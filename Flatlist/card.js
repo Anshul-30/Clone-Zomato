@@ -13,8 +13,8 @@ const CARD=[
         offer2:'Up to rs 35',
         dis:require('../Images/discount.png'),
         loc:'Fast Food',
-        price:'rs 250 for one'
-        
+        price:'rs 250 for one',
+        saf:'Follow all Max Safety measures to ensure your food is safe'
     },
     {
         id:'2',
@@ -30,7 +30,8 @@ const CARD=[
         offer2:'Up to rs 35',
         dis:require('../Images/discount.png'),
         loc:'Fast Food',
-        price:'rs 250 for one'
+        price:'rs 250 for one',
+        saf:'Follow all Max Safety measures to ensure your food is safe'
     },
     {
         id:'3',
@@ -46,7 +47,8 @@ const CARD=[
         offer2:'Up to rs 35',
         dis:require('../Images/discount.png'),
         loc:'Fast Food',
-        price:'rs 250 for one'
+        price:'rs 250 for one',
+        saf:'Follow all Max Safety measures to ensure your food is safe'
     },
     {
         id:'4',
@@ -62,7 +64,8 @@ const CARD=[
         offer2:'Up to rs 35',
         dis:require('../Images/discount.png'),
         loc:'Fast Food',
-        price:'rs 250 for one'
+        price:'rs 250 for one',
+        saf:'Follow all Max Safety measures to ensure your food is safe'
    
     },
     {
@@ -80,6 +83,6 @@ const CARD=[
         dis:require('../Images/discount.png'),
         price:'rs 250 for one',
         loc:'Fast Food',
-        
+        saf:'Follow all Max Safety measures to ensure your food is safe'
     },]
     export default CARD

@@ -2,8 +2,10 @@ import React from 'react'
 import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image ,TouchableOpacity} from 'react-native'
 import styles from '../style'
 import DATA from '../Flatlist/DATA'
-
-function StatusBar() {
+import { Divider } from 'react-native-elements/dist/divider/Divider'
+function Statusbar() {
+  const search_image = require('../Images/search(1).png')
+  const mike =require('../Images/voice.png')
   return (
    <>
         <View>
@@ -15,11 +17,16 @@ function StatusBar() {
             
             <Image style={styles.location1} source={require('../Images/wine.png')} />
          </View>
-          <TextInput placeholder='Search Restaurant and dish'  style={styles.search} />
+         <View style={styles.search}  >
+         <Image source={search_image} style={styles.searchicon}/>
+          <TextInput  placeholder='Search Restaurant and dish' style={styles.searchtxt1} />
+          <Divider orientation='vertical' style={{margin:7}}></Divider>
+          <Image source={mike} style={[styles.mike]}/>
+          </View>
         </View>
         
    </>
   )
 }
 
-export default StatusBar
+export default Statusbar

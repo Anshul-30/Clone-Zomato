@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './style'
-import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image ,TouchableOpacity} from 'react-native'
+import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image ,TouchableOpacity,StatusBar} from 'react-native'
 import DATA from './Flatlist/DATA'
 import PHOTOS from './Flatlist/PHOTOS'
 import Card from './components/Card'
-import StatusBar from './components/StatusBar'
+import Statusbar from './components/Statusbar'
 import Bottompart from './components/Bottompart'
 import Grid from './components/Grid'
 import Flatlist from './components/Flatlist'
@@ -12,12 +12,11 @@ const App = () => {
 
   return (
     <>
-    {/* <View>
-  // <StatusBar barStyle='dark-content' backgroundColor={'transparent'} 
-   </View> */}
-  
+   <View>
+     <StatusBar  barStyle='dark-content' backgroundColor={'transparent'}/>
+   </View>
     <SafeAreaView>
-    <StatusBar  />
+    <Statusbar  />
         <ScrollView >
        <Flatlist/>
         <View style={{flexDirection:'row',justifyContent:"center"}}>
@@ -35,7 +34,8 @@ const App = () => {
         <Text style={styles.text3}>637 restaurants around you</Text>
 
         <Card />
-        
+        <Card />
+        <Card />
       </ScrollView>
       <Bottompart/>
     </SafeAreaView></>
