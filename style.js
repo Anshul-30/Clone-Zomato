@@ -75,8 +75,10 @@ const styles = StyleSheet.create({
         borderRadius: 7,
         alignItems:"center",
         backgroundColor:'white',
-        // shadowColor:'black',
-        // shadowOffset:{height:15,width:200}
+        shadowColor: '#171717',
+    shadowOffset: {width: -2, height: 2},
+    shadowOpacity: 0.2,
+    shadowRadius: 3,
         // elevation:3
     },
     searchtxt: {
@@ -153,7 +155,7 @@ const styles = StyleSheet.create({
     },
     gridstyle: {
         width: width / 5,
-        height: width / 3.5,
+        height: width / 2.9,
         // borderWidth:1,
         marginLeft: width / 22,
         justifyContent: 'center'
@@ -166,10 +168,14 @@ const styles = StyleSheet.create({
         // marginVertical:15
     },
     text2: {
+        // width:width/8,
+        // height:width/11.4,
+        
         // textAlign:'center',
         fontWeight: '600',
         marginHorizontal: 10,
-        marginVertical: 10
+        marginVertical: 10,
+    
     },
     seemore: {
 
@@ -229,7 +235,10 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         backgroundColor: 'white',
         elevation: 5,
-      
+        shadowColor: '#171717',
+        shadowOffset: {width: -3, height: 3},
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
     },
     iconimage:
     {

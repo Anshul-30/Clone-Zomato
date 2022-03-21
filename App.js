@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style'
-import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image ,TouchableOpacity,StatusBar} from 'react-native'
+import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image, TouchableOpacity, StatusBar } from 'react-native'
 import DATA from './Flatlist/DATA'
 import PHOTOS from './Flatlist/PHOTOS'
 import Card from './components/Card'
@@ -13,36 +13,52 @@ const App = () => {
 
   return (
     <>
-   <View>
-     <StatusBar  barStyle='dark-content' backgroundColor={'transparent'}/>
-   </View>
-    <SafeAreaView style={{flex:1}}>
-    <Statusbar  />
-    {/* <ScrollView>
+      {/* Statusbar -- start */}
+      <View>
+        <StatusBar barStyle='dark-content' backgroundColor={'transparent'} />
+      </View>
+      {/* statubar --end */}
+      <SafeAreaView style={{ flex: 1 }}>
+        {/* Header start user defined components */}
+      <Statusbar />
+        <ScrollView >
+          {/* Flatlist text user defined components */}
+        <Flatlist />
+          <View style={{ flexDirection: 'row', justifyContent: "center" }}>
+            <Image source={require('./Images/zomato-coupons.jpg')} style={styles.image} />
+            <Image source={require('./Images/zomato-offer-code-2020.jpeg')} style={styles.image} />
+          </View>
+          <View >
+            <Text numberOfLines={1} style={styles.text3}>Eat what makes you happy</Text>
+          </View>
+          {/* Flatlist -- Grid userdefined components*/}
+          <Grid />
+          <View style={styles.seemore}>
+            <Text style={styles.textmore}>see more</Text>
+            <Image source={require('./Images/down.png')} style={{ height: 15, width: 15, marginTop: 11 }} />
+          </View>
+          <Text style={styles.text3}>637 restaurants around you</Text>
+      
+          <Card />
+          <Card />
+          <Card />
+        </ScrollView>
+
+
+
+        {/* Scree 2 start*/}
+
+
+
+        {/* <ScrollView>
     <Screen/>
     </ScrollView> */}
-        <ScrollView >
-       <Flatlist/>
-        <View style={{flexDirection:'row',justifyContent:"center"}}>
-        <Image source={require('./Images/zomato-coupons.jpg')} style={styles.image} />
-        <Image source={require('./Images/zomato-offer-code-2020.jpeg')} style={styles.image} />
-        </View>
-        <View >
-          <Text numberOfLines={1} style={styles.text3}>Eat what makes you happy</Text>
-        </View>
-       <Grid/>
-        <View style={styles.seemore}>
-          <Text style={styles.textmore}>see more</Text>
-          <Image source={require('./Images/down.png') } style={{height:15,width:15,marginTop:11}}/>
-        </View>
-        <Text style={styles.text3}>637 restaurants around you</Text>
 
-        <Card />
-        <Card />
-        <Card /> 
-      </ScrollView>
-      <Bottompart/>
-    </SafeAreaView></>
+
+{/* screen 2 end */}
+{/* Footer */}
+        <Bottompart />
+      </SafeAreaView></>
   )
 }
 export default App;
