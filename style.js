@@ -130,21 +130,17 @@ const styles = StyleSheet.create({
         width: width / 1.09,
         marginTop: 0,
         margin: 12,
-        // marginRight:0,
-        // marginVertical:10,
-        // marginHorizontal:5,
         borderWidth: 1
 
     },
 
     image: {
         height: 100,
-        // width:width/2.2,
-        width: 175,
+        width: 165,
         marginRight: 8,
         marginLeft: 8,
         
-        borderRadius: 22
+        borderRadius: 20
     },
     text1: {
         color: 'black',
@@ -153,7 +149,6 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        // color:'red',
         fontSize: 22
     },
     gridstyle: {
