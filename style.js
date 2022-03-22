@@ -4,16 +4,17 @@ const { height, width } = Dimensions.get('window');
 import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
     try: {
-        height: width / 22,
-        width: width / 22
+        height: 15,
+        width: 15
     },
     imagecard: {
-        justifyContent: 'center',
+        // justifyContent: 'center',
         height: 200,
-        width:width/1.06,
+        // width:400,
         // width: 340,
         borderTopLeftRadius: 15,
-        borderTopRightRadius: 15
+        borderTopRightRadius: 15,
+        flex:1
     },
     dis: {
         height: 10,
@@ -38,40 +39,40 @@ const styles = StyleSheet.create({
         marginTop: 6,
         color: 'red',
         fontWeight: 'bold',
-        fontSize: 20
+        fontSize: 18
     },
     container: {
         flexDirection: 'row',
         marginTop: 10,
-
+        // justifyContent:'space-evenly'
+        
 
     },
     location: {
-        height: width / 15,
-        width: width / 15,
+        height: 20,
+        width: 20,
         marginTop: 12,
         marginHorizontal: 8
 
     },
     location1: {
-        height: width / 15,
-        width: width / 15,
-        // justifyContent:'flex-end',
+        height: 25,
+        width: 25,
         position: 'absolute',
         right: 10,
-        top: 10
+        // top: 10
 
     },
     search: {
         // width:width/1.1,
         marginVertical: 15,
         // height:width/12,
-        width: '95%',
-        marginLeft: 10,
+        width: '96.5%',
+        marginLeft: 7,
         flexDirection: 'row',
         borderColor: 'grey',
         borderWidth: 0.3,
-        padding:5,
+        padding:7,
         borderRadius: 7,
         alignItems:"center",
         backgroundColor:'white',
@@ -79,7 +80,8 @@ const styles = StyleSheet.create({
     shadowOffset: {width: -2, height: 2},
     shadowOpacity: 0.2,
     shadowRadius: 3,
-        // elevation:3
+        // elevation:3,
+        justifyContent:'space-evenly'
     },
     searchtxt: {
         textAlign: 'center', 
@@ -96,7 +98,7 @@ const styles = StyleSheet.create({
 
     },
     flatlist: {
-        width: width / 3.3,
+        flex:1,
         borderWidth: 0.3,
         padding: 7,
         marginHorizontal: 10,
@@ -109,15 +111,15 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     searchicon: {
-        height: width / 20,
-        width: width / 20,
+        height: 15,
+        width: 15,
         marginLeft:7,
         // transform:[{rotate:'20deg'}]
     },
     mike: {
        
-        height: width / 23,
-        width: width / 23,
+        height: 15,
+        width: 15,
 
     },
     text7:
@@ -137,11 +139,12 @@ const styles = StyleSheet.create({
 
     image: {
         height: 100,
-        width:width/2.2,
-        // width: 160,
+        // width:width/2.2,
+        width: 175,
         marginRight: 8,
         marginLeft: 8,
-        borderRadius: 20
+        
+        borderRadius: 22
     },
     text1: {
         color: 'black',
@@ -154,16 +157,18 @@ const styles = StyleSheet.create({
         fontSize: 22
     },
     gridstyle: {
-        width: width / 5,
-        height: width / 2.9,
+        flex:1,
+        // width: 100,
+        // height: width / 2.9,
         // borderWidth:1,
-        marginLeft: width / 22,
-        justifyContent: 'center'
+        // marginLeft: width / 22,
+        justifyContent: 'center',
+        alignItems:'center'
     },
     gridimage: {
-        width: width / 6,
-        height: width / 6,
-        borderRadius: (width / 6) / 2,
+        width: 75,
+        height: 75,
+        borderRadius: 37.5,
         // marginHorizontal:17,
         // marginVertical:15
     },
@@ -231,6 +236,8 @@ const styles = StyleSheet.create({
         margin: 10,
         justifyContent: 'center',
         height: 300,
+        // width:width/1.08,
+        // alignItems:'center',
         borderColor: 'grey',
         borderRadius: 15,
         backgroundColor: 'white',
@@ -239,6 +246,7 @@ const styles = StyleSheet.create({
         shadowOffset: {width: -3, height: 3},
         shadowOpacity: 0.2,
         shadowRadius: 3,
+        // alignContent:"center"
     },
     iconimage:
     {

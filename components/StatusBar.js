@@ -8,15 +8,18 @@ function Statusbar() {
   const mike =require('../Images/voice.png')
   return (
    <>
-        <View>
+        <View >
+          <View >
           <View style={styles.container}>
             <Image style={styles.location} source={require("../Images/placeholder.png")} />
             
             <Text style={styles.locationtxt}>Location </Text>
-            <Image source={require('../Images/arrow-down-sign-to-navigate.png') } style={{height:15,width:15,marginTop:15}}/>
             
-            <Image style={styles.location1} source={require('../Images/wine.png')} />
-         </View>
+            <Image source={require('../Images/arrow-down-sign-to-navigate.png') } style={{height:15,width:15,marginTop:10}}/>
+            </View>
+            <View style={{justifyContent:'flex-end'}}>
+            <Image style={styles.location1} source={require('../Images/wine.png')}/>
+         </View></View>
          <View style={styles.search}  >
          <Image source={search_image} style={styles.searchicon}/>
           <TextInput  placeholder='Search Restaurant and dish' style={styles.searchtxt1} />

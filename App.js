@@ -8,57 +8,17 @@ import Statusbar from './components/Statusbar'
 import Bottompart from './components/Bottompart'
 import Grid from './components/Grid'
 import Flatlist from './components/Flatlist'
-import Screen from './components/Screen'
+import Screen from './components/Sscreen'
+import { NavigationContainer } from '@react-navigation/native'
 const App = () => {
 
   return (
-    <>
-      {/* Statusbar -- start */}
-      <View>
-        <StatusBar barStyle='dark-content' backgroundColor={'transparent'} />
-      </View>
-      {/* statubar --end */}
-      <SafeAreaView style={{ flex: 1 }}>
-        {/* Header start user defined components */}
-      <Statusbar />
-        <ScrollView >
-          {/* Flatlist text user defined components */}
-        <Flatlist />
-          <View style={{ flexDirection: 'row', justifyContent: "center" }}>
-            <Image source={require('./Images/zomato-coupons.jpg')} style={styles.image} />
-            <Image source={require('./Images/zomato-offer-code-2020.jpeg')} style={styles.image} />
-          </View>
-          <View >
-            <Text numberOfLines={1} style={styles.text3}>Eat what makes you happy</Text>
-          </View>
-          {/* Flatlist -- Grid userdefined components*/}
-          <Grid />
-          <View style={styles.seemore}>
-            <Text style={styles.textmore}>see more</Text>
-            <Image source={require('./Images/down.png')} style={{ height: 15, width: 15, marginTop: 11 }} />
-          </View>
-          <Text style={styles.text3}>637 restaurants around you</Text>
-      
-          <Card />
-          <Card />
-          <Card />
-        </ScrollView>
+    
 
-
-
-        {/* Scree 2 start*/}
-
-
-
-        {/* <ScrollView>
-    <Screen/>
-    </ScrollView> */}
-
-
-{/* screen 2 end */}
-{/* Footer */}
+  <NavigationContainer>
         <Bottompart />
-      </SafeAreaView></>
+  </NavigationContainer>
+      
   )
 }
 export default App;

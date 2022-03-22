@@ -13,7 +13,7 @@ const Card = ()=>
            renderItem={(element)=>{
                return(
                 
-            <View style={styles.card} >
+            <View style={[styles.card]} >
                     <View style={{alignItems:"center" ,flexDirection:'row',justifyContent:'center'}}>
                         <Image source={element.item.url} style={styles.imagecard} />
                         
@@ -53,6 +53,11 @@ const Card = ()=>
                         <Text style={styles.text7}>{element.item.loc}</Text>
                         <Text style={styles.text7}>{element.item.price}</Text>
                         </View>
+
+                        
+                        {/* divider is element to draw horiztal or vertical line */}
+
+
                         <Divider width={0.3} style={{marginHorizontal:15,flex:.07}}></Divider>
                         <View style={{flex:.57}}>
                             <Text style={{marginLeft:15,marginTop:4,marginRight:15}}>{element.item.saf}</Text>
