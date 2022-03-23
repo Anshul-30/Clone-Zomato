@@ -19,7 +19,7 @@ export default function Profile() {
         <TouchableOpacity>
             <View style={Profilestyle.main}>
               <View style={Profilestyle.text}>
-                  <Text style={{fontSize:30,fontWeight:'500'}}>111111</Text>
+                  <Text style={{fontSize:30,fontWeight:'500',color:'black'}}>111111</Text>
                       <View style={{flexDirection:'row',marginLeft:10}}>
                           <Text style={{color:'red',fontSize:13}}>View activity</Text>
                           <Image source={require('../Images/play.png')} style={{height:10,width:10,margin:4}}/>
@@ -38,28 +38,28 @@ export default function Profile() {
 
 
         <ScrollView>
-
+        <View style={{paddingBottom:200}}>
         <View style={{flexDirection:'row',margin:13,justifyContent:'space-around'}}>
         <View style={{flexDirection:'column',padding:8}}>
         <View style={{alignItems:'center'}} >
           <Image  source={require('../Images/like.png')} style={Profilestyle.img}/></View>
-          <Text>Likes</Text>
+          <Text style={{color:'black'}}>Likes</Text>
         </View>
         <View style={{flexDirection:'column',padding:8}}>
           <View style={{alignItems:'center'}} >
           <Image  source={require('../Images/bell.png')} style={Profilestyle.img}/>
         </View >
-          <Text>Notification</Text>
+          <Text style={{color:'black'}}>Notification</Text>
         </View>
         <View style={{flexDirection:'column',padding:8}}>
         <View style={{alignItems:'center'}} >
           <Image  source={require('../Images/setting.png')} style={Profilestyle.img}/></View>
-          <Text>Settings</Text>
+          <Text style={{color:'black'}}>Settings</Text>
         </View>
         <View style={{flexDirection:'column' ,padding:8}}>
         <View style={{alignItems:'center'}} >
           <Image  source={require('../Images/credit-card.png')} style={Profilestyle.img}/></View>
-          <Text>Payment</Text>
+          <Text style={{color:'black'}}>Payment</Text>
         </View>
         </View>
 
@@ -75,18 +75,18 @@ export default function Profile() {
 
 
         <View style={{padding:7,marginLeft:10}}>
-          <Text style={{fontSize:15}}>
+          <Text style={{fontSize:15,color:'black'}}>
             Your Rating
           </Text></View></View>
           <View style={Profilestyle.rating}>
-         <Text>
+         <Text style={{color:'black'}}>
            5.0
          </Text>
           <Image source={require('../Images/star(2).png')} style={{ height:15,width:15}}/></View>
         </View>
         <Divider width={0.4} style={styles.divider} />
         <View style={{padding:15}}>
-          <Text style={{color:'grey'}}>FOOD ORDERS</Text>
+          <Text style={{color:'grey' ,fontSize:17}}>FOOD ORDERS</Text>
         </View>
       
       
@@ -101,7 +101,7 @@ export default function Profile() {
             <Image source={element.item.img} style={{height:15,width:15}}/>
             </View>
             <View style={{margin:7}}>
-            <Text >{element.item.title}</Text></View>
+            <Text style={{color:'black',fontSize:17}}>{element.item.title}</Text></View>
           </View>
           </>
         )
@@ -116,11 +116,11 @@ export default function Profile() {
           <Image source={require('../Images/badge.png')}style={{height:17,width:17}}/>
         </View>
       <View  style={{margin:7}}>
-      <Text>Zomato Pro</Text></View>
+      <Text style={{color:'black',fontSize:17}}>Zomato Pro</Text></View>
       </View>
       <Divider style={styles.divider}/>
       <View style={{padding:15}}>
-          <Text style={{color:'grey'}}>TABLE BOOKINGS</Text>
+          <Text style={{color:'grey',fontSize:17}}>TABLE BOOKINGS</Text>
         </View>
         <FlatList 
       data={Table}
@@ -131,7 +131,7 @@ export default function Profile() {
             <View style={Profilestyle.container}>
             <Image source={element.item.img} style={{height:15,width:15}}/></View>
             <View style={{margin:7}}>
-            <Text >{element.item.title}</Text></View>
+            <Text style={{color:'black',fontSize:17}}>{element.item.title}</Text></View>
           </View>
           </>
         )
@@ -144,17 +144,18 @@ export default function Profile() {
           <Image source={require('../Images/info(1).png')}style={{height:15,width:15}}/>
         </View>
       <View  style={{margin:7}}>
-      <Text>About</Text></View>
+      <Text style={{color:'black',fontSize:17}}>About</Text></View>
       </View>
       <Divider style={styles.divider}/>
 
 
       <View style={{marginHorizontal:15}}>
-        <Text style={{paddingTop:15}}>Send Feedback </Text>
-        <Text style={{paddingTop:15}}>Report a Safety Emergency  </Text>
-        <Text style={{paddingTop:15}}>Rate us on the Play Store</Text>
-        <Text style={{paddingTop:15}}>Log Out </Text>
+        <Text style={{paddingTop:15,fontSize:17,color:'black'}}>Send Feedback </Text>
+        <Text style={{paddingTop:15,fontSize:17,color:'black'}}>Report a Safety Emergency  </Text>
+        <Text style={{paddingTop:15,fontSize:17,color:'black'}}>Rate us on the Play Store</Text>
+        <Text style={{paddingTop:15,fontSize:17,color:'black'}}>Log Out </Text>
 
+      </View>
       </View>
         </ScrollView>
         
