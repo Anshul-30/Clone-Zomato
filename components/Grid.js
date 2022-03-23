@@ -1,7 +1,10 @@
 import React from 'react'
-import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image ,TouchableOpacity} from 'react-native'
+import { Text, View, FlatList, Image } from 'react-native'
 import styles from '../style'
 import PHOTOS from '../Flatlist/PHOTOS'
+
+
+
 function Grid() {
   return (
     <>

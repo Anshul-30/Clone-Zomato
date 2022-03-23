@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from '../style'
-import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image ,TouchableOpacity} from 'react-native'
+import { Text, View, FlatList, Image } from 'react-native'
 import DATA from '../Flatlist/DATA'
+
+
+
 function Flatlist() {
   return (
   <>
@@ -19,8 +22,9 @@ function Flatlist() {
               )
             }}
             keyExtractor={item => item.id}
-            horizontal={true} />
-        </View>
+            horizontal={true} 
+          />
+    </View>
   </>
   )
 }
