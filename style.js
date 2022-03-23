@@ -332,6 +332,9 @@ const styles = StyleSheet.create({
         zIndex: 201,
         marginTop: 20,
         marginRight: 20
+    },
+    divider:{
+        marginHorizontal:15
     }
 })
 
