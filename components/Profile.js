@@ -1,5 +1,5 @@
 import React from 'react'
-import {View,Image,Text,SafeAreaView,ScrollView,FlatList} from 'react-native'
+import {View,Image,Text,SafeAreaView,ScrollView,FlatList,TouchableOpacity} from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import Order from '../Flatlist/Order'
 import styles from '../style'
@@ -15,7 +15,8 @@ export default function Profile() {
 
     <SafeAreaView>
             <Image style={Profilestyle.image} source={require("../Images/left-arrow.png")}/>
-        
+
+        <TouchableOpacity>
             <View style={Profilestyle.main}>
               <View style={Profilestyle.text}>
                   <Text style={{fontSize:30,fontWeight:'500'}}>111111</Text>
@@ -30,6 +31,9 @@ export default function Profile() {
             </View>
           
         </View>
+        </TouchableOpacity>
+
+
         <Divider width={0.4} style={styles.divider}/>
 
 

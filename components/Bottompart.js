@@ -1,14 +1,13 @@
 import React from 'react'
-import { Text, ScrollView, TextInput, View, SafeAreaView, FlatList, Image ,TouchableOpacity} from 'react-native'
-import styles from '../style'
+import {  Image } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import Screen from './Sscreen';
 import Home from './Home';
 import Wallet from './Wallet';
 import Profile from './Profile';
+import Offer from './Offer';
 import { red } from 'react-native-reanimated/src/reanimated2/Colors';
-import { shouldBeUseWeb } from 'react-native-reanimated/src/reanimated2/PlatformChecker';
 const Tab = createBottomTabNavigator();
 
 
@@ -31,15 +30,15 @@ function Bottompart() {
 
 
 
-        <Tab.Screen name= "Dinning" component={Wallet} options={{headerShown:false,tabBarIcon:({focused})=>(
-          <Image source={require('../Images/restaurant.png')} style={{ height:20,width:20, tintColor:focused?'red':'grey'}}/>
+        <Tab.Screen name= "Wallet" component={Wallet} options={{headerShown:false,tabBarIcon:({focused})=>(
+          <Image source={require('../Images/wallet.png')} style={{ height:20,width:20, tintColor:focused?'red':'grey'}}/>
         )}}/>
 
         {/* -----------Screen 3 --------------- */}
 
 
 
-        <Tab.Screen name ="Offer" component={Profile} options={{headerShown:false,tabBarIcon:({focused})=>(
+        <Tab.Screen name ="Offer" component={Offer} options={{headerShown:false,tabBarIcon:({focused})=>(
           <Image source={require('../Images/discount(2).png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}}/>
 
@@ -49,8 +48,8 @@ function Bottompart() {
 
 
         
-        <Tab.Screen name="Wallet" component={Wallet} options={{headerShown:false, tabBarIcon:({focused})=>(
-          <Image source={require('../Images/wallet.png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
+        <Tab.Screen name="Profile" component={Profile} options={{headerShown:false, tabBarIcon:({focused})=>(
+          <Image source={require('../Images/user.png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}}/>
       </Tab.Navigator>
     
