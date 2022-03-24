@@ -9,7 +9,7 @@ import Profile from './Profile'
 
 
 
-function Statusbar() {
+function Statusbar({navigation}) {
   const search_image = require('../Images/search(1).png')
   const mike =require('../Images/voice.png')
 
@@ -24,7 +24,7 @@ function Statusbar() {
               <Text style={styles.locationtxt}>Location </Text>
               <Image source={require('../Images/arrow-down-sign-to-navigate.png') } style={{height:15,width:15,marginTop:10}}/>
               </View>
-            <TouchableOpacity onPress={Profile}>
+            <TouchableOpacity onPress={()=>{navigation.navigate('Profile')}}>
             <View style={{justifyContent:'flex-end'}}>
             <Image style={styles.location1} source={require('../Images/wine.png')} />
            </View>

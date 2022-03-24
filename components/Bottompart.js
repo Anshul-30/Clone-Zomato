@@ -1,12 +1,12 @@
 import React from 'react'
-import {  Image } from 'react-native'
+import {  Image, View } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import Screen from './Sscreen';
-import Home from './Home';
-import Wallet from './Wallet';
+import HomeStack from './Home';
+import WalletStack from './Wallet';
 import Profile from './Profile';
-import Offer from './Offer';
+import OfferStack from './Offer';
 import { red } from 'react-native-reanimated/src/reanimated2/Colors';
 import { color } from 'react-native-reanimated';
 const Tab = createBottomTabNavigator();
@@ -16,13 +16,13 @@ const Tab = createBottomTabNavigator();
 
 function Bottompart() {
   return (
-    
-      <Tab.Navigator  >
+    <>
+      <Tab.Navigator options={{backgroundColor:'black'}} >
 
         {/* ----------- Screen 1----------- */}
 
 
-        <Tab.Screen  name="Delivery" component={Home} options={{tabBarHideOnKeyboard:true,tabBarActiveTintColor:'red',tabBarLabelStyle:{fontSize:13},headerShown:false, tabBarIcon:({focused})=>(
+        <Tab.Screen  name="Delivery" component={HomeStack} options={{tabBarHideOnKeyboard:true,tabBarActiveTintColor:'black',tabBarLabelStyle:{fontSize:13},headerShown:false, tabBarIcon:({focused})=>(
           <Image source={require('../Images/delivery-man.png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}} />
         
@@ -31,15 +31,15 @@ function Bottompart() {
 
 
 
-        <Tab.Screen name= "Wallet" component={Wallet} options={{tabBarActiveTintColor:'red',tabBarLabelStyle:{fontSize:13},headerShown:false,tabBarIcon:({focused})=>(
-          <Image source={require('../Images/wallet.png')} style={{ height:20,width:20, tintColor:focused?'red':'grey'}}/>
+        <Tab.Screen name= "Dinning" component={WalletStack} options={{tabBarActiveTintColor:'black',tabBarLabelStyle:{fontSize:13},headerShown:false,tabBarIcon:({focused})=>(
+          <Image source={require('../Images/restaurant.png')} style={{ height:20,width:20, tintColor:focused?'red':'grey'}}/>
         )}}/>
 
         {/* -----------Screen 3 --------------- */}
 
 
 
-        <Tab.Screen name ="Offer" component={Offer} options={{tabBarHideOnKeyboard:true,tabBarLabelStyle:{fontSize:13},tabBarActiveTintColor:'red',headerShown:false,tabBarIcon:({focused})=>(
+        <Tab.Screen name ="OFFER" component={OfferStack} options={{tabBarHideOnKeyboard:true,tabBarLabelStyle:{fontSize:13},tabBarActiveTintColor:'black',headerShown:false,tabBarIcon:({focused})=>(
           <Image source={require('../Images/discount(2).png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}}/>
 
@@ -49,12 +49,15 @@ function Bottompart() {
 
 
         
-        <Tab.Screen name="Profile" component={Profile} options={{ tabBarActiveTintColor:'red',tabBarLabelStyle:{fontSize:13},headerShown:false, tabBarIcon:({focused})=>(
-          <Image source={require('../Images/user.png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
+        <Tab.Screen name="Wallet" component={WalletStack} options={{ tabBarActiveTintColor:'black',tabBarLabelStyle:{fontSize:13},headerShown:false, tabBarIcon:({focused})=>(
+          <Image source={require('../Images/wallet.png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}}/>
       </Tab.Navigator>
+      {/* <View style={{height:5,width:100,backgroundColor:'red',position:'absolute',bottom:77}}> */}
+
+      {/* </View> */}
     
-    
+    </>
   )
 }
 
