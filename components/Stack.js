@@ -1,12 +1,22 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
+import Profile from "./Profile";
+import Statusbar from "./Statusbar";
 import { NavigationContainer } from "@react-navigation/native";
-const Stack= createStackNavigator();
-function Stack(){
-    return(
-<NavigationContainer>
+import Bottompart from "./Bottompart";
 
-</NavigationContainer>
+const Stack1 = createStackNavigator();
+
+function Stack() {
+    return (
+
+        <Stack1.Navigator>
+            <Stack1.Screen name="Home" component={Bottompart} options={{ headerShown: false }} />
+            <Stack1.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
+           
+
+        </Stack1.Navigator>
+
     )
 }
 export default Stack

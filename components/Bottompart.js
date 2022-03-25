@@ -9,6 +9,7 @@ import Profile from './Profile';
 import OfferStack from './Offer';
 import { red } from 'react-native-reanimated/src/reanimated2/Colors';
 import { color } from 'react-native-reanimated';
+import Statusbar from './Statusbar';
 const Tab = createBottomTabNavigator();
 
 
@@ -17,6 +18,7 @@ const Tab = createBottomTabNavigator();
 function Bottompart() {
   return (
     <>
+    
       <Tab.Navigator options={{backgroundColor:'black'}} >
 
         {/* ----------- Screen 1----------- */}

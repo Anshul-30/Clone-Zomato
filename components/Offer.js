@@ -12,11 +12,11 @@ import Statusbar from './Statusbar'
 
 
 
-function Offer() {
+function Offer({navigation}) {
   return (
     <SafeAreaView>
     <View>
-        <Statusbar />
+        <Statusbar navigation={navigation} />
        
         
     </View>
@@ -28,14 +28,6 @@ function Offer() {
 
 
 
-// const stack = createStackNavigator()
 
-// function OfferStack(){
-//   return(
-// <stack.Navigator>
-//   <stack.Screen name='Offer' component={Offer} options={{headerShown:false}}></stack.Screen>
-// </stack.Navigator>
-//   )
-// }
 
 export default Offer
