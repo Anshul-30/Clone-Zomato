@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
-import { Text, TextInput, View, Image ,TouchableOpacity} from 'react-native'
+import { Text, TextInput, View, Image ,TouchableOpacity, Alert} from 'react-native'
 import styles from '../style'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import Profile from './Profile'
 
-
-
+function showAlert(){
+  Alert.alert(
+    
+    "Microphones Permission is not enabled"
+  )
+}
 
 
 
@@ -39,7 +43,9 @@ function Statusbar( {navigation}) {
            <Image source={search_image} style={styles.searchicon}/>
            <TextInput  placeholder='Search Restaurant and dish' style={styles.searchtxt1} />
            <Divider orientation='vertical' style={{margin:7}}></Divider>
+           <TouchableOpacity onPress={showAlert}>
            <Image source={mike} style={[styles.mike]}/>
+           </TouchableOpacity>
           </View>
 
 

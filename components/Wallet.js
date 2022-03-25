@@ -6,7 +6,7 @@ import Statusbar from "./Statusbar";
 
 
 
-function Wallet({navigation}){
+function Wallet(){
 return(
     <>
     {/* ----------Status Bar -------- */}
@@ -17,7 +17,7 @@ return(
 
 
       <SafeAreaView style={{ flex: 1 }}>
-      <Statusbar navigation={navigation} />
+      
       <ScrollView>
       <Screen/>
       </ScrollView>

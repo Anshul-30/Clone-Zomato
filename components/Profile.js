@@ -8,14 +8,14 @@ import Table from '../Flatlist/Table'
 
 
 
-export default function Profile() {
+export default function Profile({navigation}) {
   return (
 
 
 
-    <SafeAreaView>
+    <SafeAreaView><TouchableOpacity onPress={()=> navigation.goBack()}>
             <Image style={Profilestyle.image} source={require("../Images/left-arrow.png")}/>
-
+            </TouchableOpacity>
         <TouchableOpacity>
             <View style={Profilestyle.main}>
               <View style={Profilestyle.text}>

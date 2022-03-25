@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, ScrollView, View, SafeAreaView, Image, StatusBar,TouchableOpacity,TextInput ,FlatList} from 'react-native'
+import { Text, ScrollView, View, SafeAreaView, Image, StatusBar,TouchableOpacity,TextInput ,FlatList, Alert} from 'react-native'
 // import Statusbar from './Statusbar'
 import Grid from './Grid'
 import Flatlist from './Flatlist'
@@ -19,9 +19,9 @@ import Statusbar from "./Statusbar";
 
 
 
-function Home({navigation}){return(
+function Home(){return(
     <><SafeAreaView>
-    <Statusbar navigation={navigation}/> 
+    
      <ScrollView >  
      <Flatlist />
          <View style={{ flexDirection: 'row', justifyContent: "center" }}>
