@@ -45,15 +45,19 @@ function Home({navigation}){
   const seeMore = () =>{
     if(!showMenu){
       setShowMenu(true)
-    }else{
+    }
+    else{
       setShowMenu(false)
     }
-    if(text=='see more'){
-      setText('see less')
-    }else{
-      setText('see more')
+    if(text=='See More' ){
+      setText('See Less')
+    }else
+    {
+      setText('See More')
     }
   }
+   
+  
   
   return(
     <><SafeAreaView>
@@ -74,7 +78,7 @@ function Home({navigation}){
           : null
         }
     <TouchableOpacity onPress={seeMore}>
-    <View style={styles.seemore}>
+    <View style={styles.seemore } >
            <Text style={styles.textmore} >{text}</Text>
            {/* <Image source={require('../Images/down.png')} style={{ height: 15, width: 15, marginTop: 11 }} /> */}
          </View></TouchableOpacity>
@@ -87,7 +91,6 @@ function Home({navigation}){
   <Card /> 
 
    </ScrollView>    
-   {/* <Bottompart/> */}
      </SafeAreaView>
   
     
