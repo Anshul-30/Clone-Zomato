@@ -6,27 +6,7 @@ import PHOTOS from '../Flatlist/PHOTOS';
 import styles from '../style';
 
 
-// const [showMenu , setShowmenu] = useState(false)
-// const seeMore =()=>{
-//   setShowmenu(true)
-//   return(
-//     <>
-//     <FlatList
-//              data={PHOTOS}
-//            renderItem={(element) => {
-//                return (
-//                  <View style={styles.gridstyle}>
-//                    <Image style={styles.gridimage} source={element.item.url} />
-//                    <Text style={styles.text2} >{element.item.title}</Text>
-//                  </View>
-//                )
-//              }             }
-//              numColumns={4}
-//            /> :null
-//     </>
-//   )
-// }
-// export default seeMore
+
 
 export default function Collapse1() {
   return (

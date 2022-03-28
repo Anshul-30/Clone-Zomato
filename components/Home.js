@@ -41,14 +41,20 @@ const SeeMore =()=>{
 
 function Home({navigation}){
   const [showMenu, setShowMenu] = useState(false)
-
+  const [text, setText] = useState('See More')
   const seeMore = () =>{
     if(!showMenu){
       setShowMenu(true)
     }else{
       setShowMenu(false)
     }
+    if(text=='see more'){
+      setText('see less')
+    }else{
+      setText('see more')
+    }
   }
+  
   return(
     <><SafeAreaView>
     
@@ -69,8 +75,8 @@ function Home({navigation}){
         }
     <TouchableOpacity onPress={seeMore}>
     <View style={styles.seemore}>
-           <Text style={styles.textmore}>see more</Text>
-           <Image source={require('../Images/down.png')} style={{ height: 15, width: 15, marginTop: 11 }} />
+           <Text style={styles.textmore} >{text}</Text>
+           {/* <Image source={require('../Images/down.png')} style={{ height: 15, width: 15, marginTop: 11 }} /> */}
          </View></TouchableOpacity>
         
         
