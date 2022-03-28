@@ -1,8 +1,17 @@
-import React, { Component } from 'react'
+import React, { createRef} from 'react'
 import { Text, TextInput, View, Image ,TouchableOpacity, Alert} from 'react-native'
 import styles from '../style'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import Profile from './Profile'
+import ActionSheetimport ,{ SheetManager } from 'react-native-actions-sheet'
+
+
+const actionsheet = [
+  {
+    menu:'uy'
+  }
+]
+
 
 function showAlert(){
   Alert.alert(
@@ -24,6 +33,7 @@ function Statusbar( {navigation}) {
           {/* ------------ Location------------- */}
      <View >
           <View style={styles.container}>
+            <TouchableOpacity></TouchableOpacity>
               <Image style={styles.location} source={require("../Images/placeholder.png")} />
               <Text style={styles.locationtxt}>Location </Text>
               <Image source={require('../Images/arrow-down-sign-to-navigate.png') } style={{height:15,width:15,marginTop:10}}/>

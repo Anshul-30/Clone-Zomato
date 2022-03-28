@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import { Text, ScrollView, View, SafeAreaView, Image, StatusBar,TouchableOpacity,TextInput ,FlatList, Alert} from 'react-native'
 // import Statusbar from './Statusbar'
 import Grid from './Grid'
@@ -6,20 +6,50 @@ import Flatlist from './Flatlist'
 import Card from "./Card";
 import styles from "../style"
 import { createStackNavigator } from "@react-navigation/stack";
-import { Divider } from 'react-native-elements/dist/divider/Divider'
-import Profilestyle from "../Flatlist/Style/Profilestyle";
-import Order from "../Flatlist/Order";
-import Table from "../Flatlist/Table";
-import Statusbar from "./Statusbar";
+import Collapse1 from "./Collapse";
+import Bottompart from "./Bottompart";
+import PHOTOS from "../Flatlist/PHOTOS";
 
 
 
 
+const SeeMore =()=>{
+
+  
+  return(
+
+    
+    <FlatList
+             data={PHOTOS}
+           renderItem={(element) => {
+               return (
+                 <View style={styles.gridstyle}>
+                   <Image style={styles.gridimage} source={element.item.url} />
+                   <Text style={styles.text2} >{element.item.title}</Text>
+                 </View>
+               )
+             }             }
+             numColumns={4}
+           />
+
+    
+  )
+}
+   
 
 
 
+function Home({navigation}){
+  const [showMenu, setShowMenu] = useState(false)
 
-function Home(){return(
+  const seeMore = () =>{
+    if(!showMenu){
+      setShowMenu(true)
+    }else{
+      setShowMenu(false)
+    }
+  }
+  return(
     <><SafeAreaView>
     
      <ScrollView >  
@@ -32,16 +62,26 @@ function Home(){return(
            <Text numberOfLines={1} style={styles.text3}>Eat what makes you happy</Text>
          </View> 
     <Grid />
-         <View style={styles.seemore}>
+    {
+          showMenu ? 
+          <SeeMore />
+          : null
+        }
+    <TouchableOpacity onPress={seeMore}>
+    <View style={styles.seemore}>
            <Text style={styles.textmore}>see more</Text>
            <Image source={require('../Images/down.png')} style={{ height: 15, width: 15, marginTop: 11 }} />
-         </View>
+         </View></TouchableOpacity>
+        
+        
          <Text style={styles.text3}>637 restaurants around you</Text> 
      
    <Card />
    <Card />
   <Card /> 
+
    </ScrollView>    
+   {/* <Bottompart/> */}
      </SafeAreaView>
   
     

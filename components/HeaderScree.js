@@ -11,22 +11,24 @@ function HeaderScreen(){
         <Tab.Navigator screenOptions={{
           tabBarActiveTintColor:'red',
           tabBarInactiveTintColor:'grey',
-        //  tabBarActiveTintColor:'black',
-        
-        
-           
-
-
+          swipeEnabled:false,
+          tabBarPressColor:'black',
+          
+          tabBarIndicatorStyle:{
+            backgroundColor:'transparent'
+          },
            tabBarStyle:{
-             backgroundColor:'gainsboro',
+            
+             backgroundColor:'white',
+             
              marginBottom:15,
              marginHorizontal:10,
-           borderRadius:10,
-           
+            //  borderRadius:2
+          
           }
           }}>
-          <Tab.Screen name="Delivery1" component={Home}/>
-          <Tab.Screen name="Delivery2" component={Card}/>
+          <Tab.Screen name="Delivery" component={Home}/>
+          <Tab.Screen name="Dinning" component={Card}/>
         </Tab.Navigator>
         
         

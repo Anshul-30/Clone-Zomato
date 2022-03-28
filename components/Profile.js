@@ -16,7 +16,7 @@ export default function Profile({navigation}) {
     <SafeAreaView><TouchableOpacity onPress={()=> navigation.goBack()}>
             <Image style={Profilestyle.image} source={require("../Images/left-arrow.png")}/>
             </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate('Dinning')}>
             <View style={Profilestyle.main}>
               <View style={Profilestyle.text}>
                   <Text style={{fontSize:30,fontWeight:'500',color:'black'}}>111111</Text>
