@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeStack from '../Screens/Home';
 import WalletStack from '../Screens/Wallet';
 
-import OfferStack from '../Components/Offer';
+import OfferStack from '../Screens/Offer';
 
 import Statusbar from '../Components/StatusBar';
 
