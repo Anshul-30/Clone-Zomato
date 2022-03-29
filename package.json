@@ -23,6 +23,7 @@
     "react-native": "^0.67.3",
     "react-native-actions-sheet": "^0.6.0",
     "react-native-actionsheet": "^2.4.2",
+    "react-native-divider": "^1.0.3",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^2.3.2",
     "react-native-pager-view": "^5.4.15",

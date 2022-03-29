@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Image, View,SafeAreaView } from 'react-native'
+import {  Image, View,SafeAreaView ,StatusBar} from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
@@ -18,7 +18,7 @@ const Tab = createBottomTabNavigator();
 function Bottompart({navigation}) {
   return (
     <>
-    
+    <StatusBar barStyle='dark-content' backgroundColor={'transparent'}/>
      <SafeAreaView>
      <Statusbar navigation={navigation} /> 
      </SafeAreaView>

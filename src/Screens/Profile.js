@@ -75,7 +75,8 @@ export default function Profile({ navigation }) {
             <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Send Feedback </Text>
             <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Report a Safety Emergency  </Text>
             <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Rate us on the Play Store</Text>
-            <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Log Out </Text>
+           <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
+            <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Log Out </Text></TouchableOpacity>
 
           </View>
         </View>

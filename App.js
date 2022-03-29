@@ -12,7 +12,7 @@ const App = () => {
   
   <NavigationContainer>
     
-        <Stack/>
+        <Stack />
   </NavigationContainer></>
   )
 }
