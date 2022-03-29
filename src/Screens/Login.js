@@ -1,14 +1,31 @@
 import React from 'react'
-import{Text,View} from 'react-native'
+import{View,ScrollView} from 'react-native'
 import LoginHeader from '../Components/LoginHeader'
-
+import Divider from 'react-native-divider'
+import LoginInput from '../Components/LoginInput'
+import LoginGoogle from '../Components/LoginGoogle'
 
 
 
 export default function Login({navigation}) {
   return (
  <>
- <LoginHeader navigation={navigation}/>
+ <ScrollView>
+      <LoginHeader />
+       <View style={{marginHorizontal:30,marginVertical:10}}>
+            <Divider orientation='center'  >
+                      Log in or sign up
+              </Divider>
+     </View>
+    <LoginInput navigation={navigation}/>
+      <View style={{marginHorizontal:30}}>
+          <Divider orientation='center' >
+                    or
+          </Divider>
+    </View>
+
+  <LoginGoogle/>
+  </ScrollView>
  </>
   )
 }
