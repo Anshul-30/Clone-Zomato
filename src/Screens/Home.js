@@ -4,7 +4,7 @@ import { Text, ScrollView, View, SafeAreaView, Image, StatusBar,TouchableOpacity
 import Grid from '../Components/Grid'
 import Flatlist from '../Components/Flatlist'
 import Card from "../Components/Card";
-import styles from "../../style"
+import styles from "../styles/style"
 
 import PHOTOS from "../Components/PHOTOS";
 

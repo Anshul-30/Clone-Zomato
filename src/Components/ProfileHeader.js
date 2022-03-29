@@ -1,6 +1,6 @@
 import React from 'react'
 import{View,Text,Image} from 'react-native'
-import Profilestyle from '../../Flatlist/Style/Profilestyle'
+import Profilestyle from '../styles/Profilestyle'
 
 
 

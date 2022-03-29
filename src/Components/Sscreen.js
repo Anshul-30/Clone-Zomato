@@ -2,7 +2,7 @@ import React from 'react'
 import {Image,View,Text,FlatList} from'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import Item from './Item'
-import secondstyle from '../../Flatlist/Style/secondscreen'
+import secondstyle from '../styles/secondscreen'
 
 
 

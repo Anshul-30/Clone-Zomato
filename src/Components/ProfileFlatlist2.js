@@ -1,5 +1,5 @@
 import React from 'react'
-import Profilestyle from '../../Flatlist/Style/Profilestyle'
+import Profilestyle from '../styles/Profilestyle'
 import{Text,FlatList,Image,View} from 'react-native'
 import Table from './Table'
 

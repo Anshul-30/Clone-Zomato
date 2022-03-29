@@ -1,5 +1,5 @@
 import React from 'react'
-import styles  from '../../style'
+import styles  from '../styles/style'
 import {View,Text,FlatList,Image,TouchableOpacity} from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 

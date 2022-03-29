@@ -1,6 +1,6 @@
 import React, { createRef} from 'react'
 import { Text, TextInput, View, Image ,TouchableOpacity, Alert} from 'react-native'
-import styles from '../../style'
+import styles from '../styles/style'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 
 

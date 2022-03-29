@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, FlatList, Image } from 'react-native'
-import styles from '../../style'
+import styles from '../styles/style'
 import PHOTOS from './PHOTOS'
 
 

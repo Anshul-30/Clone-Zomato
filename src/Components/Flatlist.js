@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../style'
+import styles from '../styles/style'
 import { Text, View, FlatList, Image } from 'react-native'
 // import DATA from '../Flatlist/DATA'
 

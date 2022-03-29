@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Profile from "../Components/Profile";
+import Profile from "../Screens/Profile";
 import Bottompart from "./Bottompart";
 
 const Stack1 = createStackNavigator();

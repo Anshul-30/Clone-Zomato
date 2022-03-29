@@ -1,6 +1,6 @@
 import React from 'react'
 import{Text,View,Image,FlatList} from 'react-native'
-import Profilestyle from '../../Flatlist/Style/Profilestyle'
+import Profilestyle from '../styles/Profilestyle'
 import Order from '../Components/Order'
 
 export default function ProfileFlatlist() {
