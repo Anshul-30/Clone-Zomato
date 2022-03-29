@@ -13,11 +13,13 @@ export default function Login({navigation}) {
  <ScrollView>
       <LoginHeader />
        <View style={{marginHorizontal:30,marginVertical:10}}>
+
             <Divider orientation='center'  >
                       Log in or sign up
               </Divider>
      </View>
     <LoginInput navigation={navigation}/>
+    
       <View style={{marginHorizontal:30}}>
           <Divider orientation='center' >
                     or

@@ -15,7 +15,7 @@ export default function LoginHeader() {
   
   <SafeAreaView>
 
-   <View style={{marginHorizontal:40,marginVertical:15}}>
+   <View style={LoginPage.headerview}>
           <Text style={LoginPage.headertxt}>India's #1 Food Delivery and Dinning App</Text>
    </View>
 
