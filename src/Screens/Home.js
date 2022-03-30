@@ -37,7 +37,7 @@ const SeeMore =()=>{
 
 
 
-function Home(){
+function Home({navigation}){
   const [showMenu, setShowMenu] = useState(false)
   const [text, setText] = useState('See More')
   const seeMore = () =>{
@@ -84,9 +84,9 @@ function Home(){
         
          <Text style={styles.text3}>637 restaurants around you</Text> 
      
-   <Card />
-   <Card />
-  <Card /> 
+   <Card navigation={navigation}/>
+   <Card navigation={navigation}/>
+  <Card navigation={navigation}/> 
 
    </ScrollView>    
      </SafeAreaView>

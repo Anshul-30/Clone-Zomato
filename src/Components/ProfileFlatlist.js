@@ -12,10 +12,10 @@ function click(title)
 {
   console.log(title.title)
   if(title.id === "1")
-  navigation.navigate('Login')
+  navigation.navigate('Order')
   else
  if(title.id === "2")
-   navigation.navigate('Login')
+   navigation.navigate('Order')
   
   
 }

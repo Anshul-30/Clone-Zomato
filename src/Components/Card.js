@@ -4,7 +4,6 @@ import {View,Text,FlatList,Image,TouchableOpacity} from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import images from '../constants/imagepath'
 
-
 const CARD=[
     {
         id:'1',
@@ -96,8 +95,14 @@ const CARD=[
 
 
 
-const Card = ()=>
+const Card = ({navigation})=>
 {
+
+    function click(element){
+            console.log(element.title)
+            if(element.id === '1')
+            navigation.navigate('Login')
+    }
     return(
        <View >
 
@@ -106,7 +111,7 @@ const Card = ()=>
            data={CARD}
            renderItem={(element)=>{
                return(
-                
+                <TouchableOpacity onPress={()=>click(element.item)}>
             <View style={[styles.card]} >
                     <View style={{alignItems:"center" ,flexDirection:'row',justifyContent:'center'}}>
                         <Image source={element.item.url} style={styles.imagecard} />
@@ -172,7 +177,7 @@ const Card = ()=>
                     
                     </View>   
                 </View>
-            
+                </TouchableOpacity>
                )
            }
         }/>
