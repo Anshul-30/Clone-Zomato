@@ -1,7 +1,7 @@
 import React from 'react'
 import {Text,View,Image} from 'react-native'
 import Profilestyle from '../styles/Profilestyle'
-
+import images from '../constants/imagepath'
 
 
 
@@ -10,7 +10,7 @@ export default function ProfileAbout() {
     <View style={{flexDirection:'row',padding:10}}>
 
     <View style={Profilestyle.container}>
-            <Image source={require('../assets/images/info(1).png')}style={{height:15,width:15}}/>
+            <Image source={images.about}style={{height:15,width:15}}/>
     </View>
 
 

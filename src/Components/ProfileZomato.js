@@ -1,7 +1,7 @@
 import React from 'react'
 import {Text,View,Image} from 'react-native'
 import Profilestyle from '../styles/Profilestyle'
-
+import images from '../constants/imagepath'
 
 
 
@@ -10,7 +10,7 @@ export default function ProfileZomato() {
     <View style={{ flexDirection: 'row', padding: 10 }}>
 
           <View style={Profilestyle.container}>
-              <Image source={require('../assets/images/badge.png')} style={{ height: 17, width: 17 }} />
+              <Image source={images.badge} style={{ height: 17, width: 17 }} />
            </View>
 
 

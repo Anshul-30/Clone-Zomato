@@ -3,7 +3,7 @@ import {Image,View,Text,FlatList} from'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import Item from './Item'
 import secondstyle from '../styles/secondscreen'
-
+import images from '../constants/imagepath'
 
 
 
@@ -16,7 +16,7 @@ function Screen() {
 
   <View style={{alignItems:"center"}}>
       <View style={secondstyle.main}>
-          <Image source={require('../assets/images/wallet(1).png')} style={secondstyle.mainimage} />
+          <Image source={images.wallet} style={secondstyle.mainimage} />
       </View>
 
       <View>

@@ -1,43 +1,44 @@
+import images from '../constants/imagepath'
 const PHOTOS=[
     
     {
         id:'2',
-        url:require("../assets/images/download(1).jpeg"),
+        url:images.burger ,
         title:'Burger'
     },
     {
         id:'1',
-        url:require('../assets/images/anshul.jpeg'),
+        url:images.pizza,
         title:'Pizza'
     },
     {
         id:'3',
-        url:require('../assets/images/download(2).jpeg'),
+        url:images.kulcha,
         title:'Kulcha'
     },
     {
         id:'4',
-        url:require('../assets/images/download(3).jpeg'),
+        url:images.rolls,
         title:'Rolls '
     },
     {
         id:'5',
-        url:require('../assets/images/download(4).jpeg'),
+        url:images.paratha,
         title:'Paratha'
     },
     {
         id:'6',
-        url:require('../assets/images/download(5).jpeg'),
+        url:images.thali,
         title: 'Thali'
     },
     {
         id:'7',
-        url:require('../assets/images/download(6).jpeg'),
+        url:images.healthy,
         title:'Healthy'
     },
     {
         id:'8',
-        url:require('../assets/images/anshul.jpeg'),
+        url:images.burger,
         title:'Healthy'
     },
 ]

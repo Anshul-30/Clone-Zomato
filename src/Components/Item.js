@@ -1,19 +1,20 @@
+import images from '../constants/imagepath'
 const Item=[
     {
         id:'1',
-        img:require('../assets/images/check.png'),
+        img:images.verify,
         title:'One-click checkout',
         des:`No need to wait for OTPs - payments get processed instantly`
     },
     {
         id:'2',
-        img:require('../assets/images/shield.png'),
+        img:images.shield,
         title:'Safe and secure',
         des:`No need to wait for OTPs - payments get processed instantly`
     },
     {
         id:'3',
-        img:require('../assets/images/pro.png'),
+        img:images.pro2,
         title:'One-click checkout',
         des:`No need to wait for OTPs - payments get processed instantly`
     }

@@ -5,6 +5,7 @@ import { Divider } from 'react-native-elements/dist/divider/Divider'
 import ActionSheet ,{SheetManager}from 'react-native-actions-sheet'
 import { FlatList, ScrollView } from 'react-native-gesture-handler'
 import saved from './Address'
+import images from '../constants/imagepath'
 
 
 
@@ -25,8 +26,6 @@ function Show(){
   SheetManager.show("Action")
 }
 
-  const search_image = require('../assets/images/search(1).png')
-  const mike =require('../assets/images/voice.png')
 
   return (
    <>
@@ -36,14 +35,14 @@ function Show(){
      <View >
           <View style={styles.container}>
             <TouchableOpacity  onPress={Show}  >
-              <Image style={styles.location} source={require("../assets/images/placeholder.png")}/>
+              <Image style={styles.location} source={images.location}/>
            </TouchableOpacity>
               <Text style={styles.locationtxt}>Location </Text>
-              <Image source={require('../assets/images/arrow-down-sign-to-navigate.png') } style={{height:15,width:15,marginTop:10}}/>
+              <Image source={images.down_arrow } style={{height:15,width:15,marginTop:10}}/>
               </View>
             <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
             <View style={{justifyContent:'flex-end'}}>
-            <Image style={styles.location1} source={require('../assets/images/wine.png')} />
+            <Image style={styles.location1} source={images.wine} />
            </View>
            </TouchableOpacity>
   </View>
@@ -53,11 +52,11 @@ function Show(){
 
 
          <View style={styles.search}  >
-           <Image source={search_image} style={styles.searchicon}/>
+           <Image source={images.search_image} style={styles.searchicon}/>
            <TextInput  placeholder='Search Restaurant and dish' style={styles.searchtxt1} />
            <Divider orientation='vertical' style={{margin:7}}></Divider>
            <TouchableOpacity onPress={showAlert}>
-           <Image source={mike} style={[styles.mike]}/>
+           <Image source={images.mike} style={[styles.mike]}/>
            </TouchableOpacity>
           </View>
 
@@ -81,7 +80,7 @@ function Show(){
 
 
         <View style={styles.search}>
-            <Image source={search_image} style={styles.searchicon}/>
+            <Image source={images.search_image} style={styles.searchicon}/>
             <TextInput  placeholder='Search Restaurant and dish' style={styles.searchtxt1} />
         </View>
 
@@ -110,7 +109,7 @@ function Show(){
                                     <>
                                     <View style={{padding:10}}>
                                       <View style={{marginHorizontal:25,flexDirection:'row'}}>
-                                        <Image source={require('../assets/images/845022.png')} style={{height:20,width:20,marginRight:25}}/>
+                                        <Image source={images.home} style={{height:20,width:20,marginRight:25}}/>
                                         <Text style={{color:'black'}}>{element.item.title}</Text>
                                       </View> 
                                       <View style={{marginHorizontal:18,flexDirection:'row' }}>
@@ -137,7 +136,7 @@ function Show(){
                               <>
                               <View style={{padding:10}}>
                               <View style={{marginHorizontal:25,flexDirection:'row'}}>
-                                  <Image source={require('../assets/images/placeholder.png')} style={{height:20,width:20,marginRight:25}}/>
+                                  <Image source={images.location} style={{height:20,width:20,marginRight:25}}/>
                                   <Text style={{color:'black'}}>{element.item.title}</Text>
                               </View> 
                                 <View style={{marginHorizontal:18,flexDirection:'row' }}>
@@ -162,7 +161,7 @@ function Show(){
                                       <>
                                       <View style={{padding:10}}>
                                           <View style={{marginHorizontal:25,flexDirection:'row'}}>
-                                            <Image source={require('../assets/images/placeholder.png')} style={{height:20,width:20,marginRight:25}}/>
+                                            <Image source={images.location} style={{height:20,width:20,marginRight:25}}/>
                                             <Text style={{color:'black'}}>{element.item.title}</Text>
                                           </View> 
                                           <View style={{marginHorizontal:18,flexDirection:'row' }}>

@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from '../styles/style'
 import { Text, View, FlatList, Image } from 'react-native'
-// import DATA from '../Flatlist/DATA'
+import images from '../constants/imagepath'
 
 
 const DATA=[
   {
     id:'1',
     name:'MAX Safety',
-    url:require("../assets/images/check.png")
+    url:images.verify
    
   },
   {
@@ -19,12 +19,12 @@ const DATA=[
   {
     id: '3',
     name:'Great Offers',
-    url:require("../assets/images/discount(2).png")
+    url:images.discount2
   },
   {
     id: '4',
     name:'Rating 4.0+',
-    // url:require("/Users/admin/Desktop/Project/Zomato/Images/download(1).jpeg")
+
   },
   {
       id:'5',
@@ -34,12 +34,12 @@ const DATA=[
   {
     id:'6',
     name:'Pure Veg',
-    url:require("../assets/images/salad.png")
+    url:images.salad
 },
 {
   id:'7',
   name:'Pro',
-  url:require("../assets/images/premium.png")
+  url:images.pro
 },
 {
 id:'8',

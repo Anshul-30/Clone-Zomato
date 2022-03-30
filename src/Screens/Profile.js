@@ -10,7 +10,7 @@ import ProfileHeader from '../Components/ProfileHeader'
 import ProfileScreen from '../Components/ProfileScreen'
 import ProfileRating from '../Components/ProfileRating'
 import ProfileAbout from '../Components/ProfileAbout'
-
+import images from '../constants/imagepath'
 
 
 
@@ -20,7 +20,7 @@ export default function Profile({ navigation }) {
     <SafeAreaView>
 
       <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Image style={Profilestyle.image} source={require("../assets/images/left-arrow.png")} />
+        <Image style={Profilestyle.image} source={images.left_arrowhead} />
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => navigation.navigate('Dinning')}>
@@ -45,7 +45,7 @@ export default function Profile({ navigation }) {
             <Text style={{ color: 'grey', fontSize: 17 }}>FOOD ORDERS</Text>
           </View>
 
-          <ProfileFlatlist />
+          <ProfileFlatlist navigation={navigation} />
 
 
           <Divider style={styles.divider} />

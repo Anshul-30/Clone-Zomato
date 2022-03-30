@@ -1,7 +1,7 @@
 import React from 'react'
 import {  Image, View,SafeAreaView ,StatusBar} from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import images from '../constants/imagepath';
 import Card from '../Components/Card';
 import HomeStack from '../Screens/Home';
 import WalletStack from '../Screens/Wallet';
@@ -35,7 +35,7 @@ function Bottompart({navigation}) {
           headerShown:false, 
           
           tabBarIcon:({focused})=>(
-          <Image source={require('../assets/images/delivery-man.png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
+          <Image source={images.deliver} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}} />
         
 
@@ -49,7 +49,7 @@ function Bottompart({navigation}) {
            tabBarLabelStyle:{fontSize:13},
            headerShown:false,
            tabBarIcon:({focused})=>(
-          <Image source={require('../assets/images/restaurant.png')} style={{ height:20,width:20, tintColor:focused?'red':'grey'}}/>
+          <Image source={images.dinning} style={{ height:20,width:20, tintColor:focused?'red':'grey'}}/>
         )}}/>
 
         {/* -----------Screen 3 --------------- */}
@@ -63,7 +63,7 @@ function Bottompart({navigation}) {
           tabBarActiveTintColor:'black',
           headerShown:false,
           tabBarIcon:({focused})=>(
-          <Image source={require('../assets/images/discount(2).png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
+          <Image source={images.discount2} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}}/>
 
 
@@ -78,7 +78,7 @@ function Bottompart({navigation}) {
           tabBarLabelStyle:{fontSize:13},
           headerShown:false,
            tabBarIcon:({focused})=>(
-          <Image source={require('../assets/images/wallet.png')} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
+          <Image source={images.money} style={{ height:20,width:20,tintColor:focused?'red':'grey'}}/>
         )}}/>
       </Tab.Navigator>
      
