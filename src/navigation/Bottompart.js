@@ -2,7 +2,7 @@ import React from 'react'
 import {  Image, View,SafeAreaView ,StatusBar} from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-
+import Card from '../Components/Card';
 import HomeStack from '../Screens/Home';
 import WalletStack from '../Screens/Wallet';
 
@@ -43,7 +43,7 @@ function Bottompart({navigation}) {
 
 
 
-        <Tab.Screen name= "Dinning" component={WalletStack}
+        <Tab.Screen name= "Dinning" component={Card}
          options={{
            tabBarActiveTintColor:'black',
            tabBarLabelStyle:{fontSize:13},

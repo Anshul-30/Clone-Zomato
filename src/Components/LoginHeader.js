@@ -10,7 +10,7 @@ export default function LoginHeader() {
   <>
   
   <ScrollView>
-   <StatusBar barStyle='light-content'/>
+   <StatusBar barStyle='light-content' backgroundColor={'#a52a2a'}/>
    <Image source={require('../assets/images/Creative-fast-food-background-vector-design-01.jpg')} style={{width:'100%'}}/>
   
   <SafeAreaView>
