@@ -10,12 +10,20 @@ import Order from '../Components/Order'
 export default function ProfileFlatlist({navigation}) {
 function click(title)
 {
-  console.log(title.title)
-  if(title.id === "1")
-  navigation.navigate('Order')
-  else
- if(title.id === "2")
-   navigation.navigate('Order')
+  // console.log(title.title)
+  switch(title.id)
+  {
+    case '1':
+      navigation.navigate('Order')
+      break;
+      case '2':
+        navigation.navigate('Order')
+  }
+//   if(title.id === "1")
+//   navigation.navigate('Order')
+//   else
+//  if(title.id === "2")
+//    navigation.navigate('Order')
   
   
 }

@@ -66,7 +66,7 @@ export default function Profile({ navigation }) {
           <ProfileFlatlist2 />
 
           <Divider style={styles.divider} />
-          <ProfileAbout />
+          <ProfileAbout navigation={navigation}/>
           <Divider style={styles.divider} />
 
 

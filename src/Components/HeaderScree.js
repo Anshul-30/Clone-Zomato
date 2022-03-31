@@ -2,7 +2,7 @@ import React from "react";
 
 
 import Home from '../Screens/Home'
-import Card from "../Components/Card";
+import Card from "./Card";
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 const Tab = createMaterialTopTabNavigator();
 function HeaderScreen(){

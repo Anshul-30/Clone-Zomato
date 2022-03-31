@@ -2,7 +2,7 @@ import React from 'react'
 
 import { NavigationContainer } from '@react-navigation/native'
 import Stack from './src/navigation/Stack'
-
+import Route from './src/navigation/Route'
 
 
 const App = () => {
@@ -10,10 +10,10 @@ const App = () => {
   return (
     <>
   
-  <NavigationContainer>
-    
-        <Stack />
-  </NavigationContainer></>
+  
+        <Route/>
+        {/* <Stack /> */}
+  </>
   )
 }
 export default App;

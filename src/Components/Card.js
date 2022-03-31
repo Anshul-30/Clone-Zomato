@@ -101,7 +101,7 @@ const Card = ({navigation})=>
     function click(element){
             console.log(element.title)
             if(element.id === '1')
-            navigation.navigate('Login')
+            navigation.navigate('Menu')
     }
     return(
        <View >
@@ -111,8 +111,8 @@ const Card = ({navigation})=>
            data={CARD}
            renderItem={(element)=>{
                return(
-                <TouchableOpacity onPress={()=>click(element.item)}>
-            <View style={[styles.card]} >
+                <TouchableOpacity onPress={()=>click(element.item)} activeOpacity={.9}>
+                 <View style={[styles.card]} >
                     <View style={{alignItems:"center" ,flexDirection:'row',justifyContent:'center'}}>
                         <Image source={element.item.url} style={styles.imagecard} />
                         

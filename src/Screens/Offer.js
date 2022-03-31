@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderScreen from '../navigation/HeaderScree';
+import HeaderScreen from '../Components/HeaderScree';
 
 
 
