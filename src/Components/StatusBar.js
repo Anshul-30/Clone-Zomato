@@ -21,7 +21,9 @@ function showAlert(){
 
 
 function Statusbar( {navigation}) {
-  
+  const [add , setAdd] = useState('CDCL Building, 28B, Sector 28, chandigarh')
+  const [action,setAction] = useState(false)
+
 function Show(){
   SheetManager.show("Action")
 }
@@ -35,11 +37,12 @@ function Show(){
      <View >
           <View style={styles.container}>
             <TouchableOpacity  onPress={Show}  >
-              <Image style={styles.location} source={images.location}/>
+              <Image style={styles.location} source={images.location} />
            </TouchableOpacity>
               <Text style={styles.locationtxt}>Location </Text>
               <Image source={images.down_arrow } style={{height:15,width:15,marginTop:10}}/>
               </View>
+              <Text style={{marginLeft:33}}>{add}</Text>
             <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
             <View style={{justifyContent:'flex-end'}}>
             <Image style={styles.location1} source={images.wine} />
@@ -68,7 +71,7 @@ function Show(){
 
         {/* ---------------------------ActionSheet-------------------------------*/}
 
-        <ActionSheet id="Action">
+        <ActionSheet id="Action"  >
 
 
         <View style={{left:0,right:0,height:'75%',borderTopLeftRadius:45,borderTopRightRadius:45}} >
@@ -91,7 +94,7 @@ function Show(){
 
                 <View style={{marginHorizontal:20}}>
                   <Text style={{color:'red' ,padding:10,paddingBottom:2}}> Use current location</Text>
-                  <Text style={{color:'grey',padding:10,paddingTop:0}}> CDCL Building, 28B, Sector 28, chandigarh</Text>
+                  <Text style={{color:'grey',padding:10,paddingTop:0}}> {add}</Text>
                 </View>
 
 
@@ -107,6 +110,7 @@ function Show(){
                               renderItem={(element)=>{
                               return(
                                     <>
+                                    <TouchableOpacity onPress={()=>[setAdd(element.item.address)]} >
                                     <View style={{padding:10}}>
                                       <View style={{marginHorizontal:25,flexDirection:'row'}}>
                                         <Image source={images.home} style={{height:20,width:20,marginRight:25}}/>
@@ -118,7 +122,7 @@ function Show(){
                                         <Text>{element.item.address}</Text>
                                       </View>
                                     </View>      
-                                  <Divider style={{marginHorizontal:15}}/>
+                                  <Divider style={{marginHorizontal:15}}/></TouchableOpacity>
                                 </>  )
                     }}/>
 
@@ -134,6 +138,8 @@ function Show(){
                             renderItem={(element)=>{
                             return(
                               <>
+                                    <TouchableOpacity onPress={()=>[setAdd(element.item.address)]}>
+
                               <View style={{padding:10}}>
                               <View style={{marginHorizontal:25,flexDirection:'row'}}>
                                   <Image source={images.location} style={{height:20,width:20,marginRight:25}}/>
@@ -144,7 +150,7 @@ function Show(){
                                 <Text>{element.item.address}</Text>
                               </View>
                             </View>
-                            <Divider style={{marginHorizontal:15}}/>
+                            <Divider style={{marginHorizontal:15}}/></TouchableOpacity>
                             </> )
                   }}/>
               </View>
@@ -159,6 +165,8 @@ function Show(){
                               renderItem={(element)=>{
                               return(
                                       <>
+                                    <TouchableOpacity onPress={()=>setAdd(element.item.address)} >
+
                                       <View style={{padding:10}}>
                                           <View style={{marginHorizontal:25,flexDirection:'row'}}>
                                             <Image source={images.location} style={{height:20,width:20,marginRight:25}}/>
@@ -169,7 +177,7 @@ function Show(){
                                             <Text>{element.item.address}</Text>
                                           </View>
                                         </View>
-                                      <Divider style={{marginHorizontal:15}}/>
+                                      <Divider style={{marginHorizontal:15}}/></TouchableOpacity>
                                       </>)
                         }}/>
             </View>
