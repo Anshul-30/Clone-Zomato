@@ -18,7 +18,7 @@ const Tab = createBottomTabNavigator();
 function Bottompart({navigation}) {
   return (
     <>
-    <StatusBar barStyle='dark-content' backgroundColor={'transparent'}/>
+    <StatusBar barStyle='dark-content' backgroundColor={'white'}/>
      <SafeAreaView>
      <Statusbar navigation={navigation} /> 
      </SafeAreaView>

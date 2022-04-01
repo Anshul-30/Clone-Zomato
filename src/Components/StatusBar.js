@@ -22,12 +22,17 @@ function showAlert(){
 
 function Statusbar( {navigation}) {
   const [add , setAdd] = useState('CDCL Building, 28B, Sector 28, chandigarh')
-  const [action,setAction] = useState(false)
+  const [action,setAction] = useState(true)
 
 function Show(){
   SheetManager.show("Action")
 }
-
+function act(){
+  if(!action)
+  setAction(false)
+  else 
+  setAction(true)
+}
 
   return (
    <>
@@ -42,7 +47,7 @@ function Show(){
               <Text style={styles.locationtxt}>Location </Text>
               <Image source={images.down_arrow } style={{height:15,width:15,marginTop:10}}/>
               </View>
-              <Text style={{marginLeft:33}}>{add}</Text>
+              <Text style={{marginLeft:33,color:'black'}}>{add}</Text>
             <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
             <View style={{justifyContent:'flex-end'}}>
             <Image style={styles.location1} source={images.wine} />
@@ -71,14 +76,14 @@ function Show(){
 
         {/* ---------------------------ActionSheet-------------------------------*/}
 
-        <ActionSheet id="Action"  >
+        <ActionSheet id="Action" >
 
-
+        
         <View style={{left:0,right:0,height:'75%',borderTopLeftRadius:45,borderTopRightRadius:45}} >
          <View style={{height:'200%'}}>
               {/* ----------Header---------- */}
         <TouchableOpacity >
-         <Text style={{margin:10,fontSize:20}}>Select a location</Text>
+         <Text style={{margin:10,fontSize:20,color:'black'}}>Select a location</Text>
       </TouchableOpacity>
 
 
@@ -118,8 +123,8 @@ function Show(){
                                       </View> 
                                       <View style={{marginHorizontal:18,flexDirection:'row' }}>
 
-                                        <Text style={{marginRight:12}}>{element.item.distance}</Text>
-                                        <Text>{element.item.address}</Text>
+                                        <Text style={{marginRight:12,color:'grey'}}>{element.item.distance}</Text>
+                                        <Text style={{color:'grey'}}>{element.item.address}</Text>
                                       </View>
                                     </View>      
                                   <Divider style={{marginHorizontal:15}}/></TouchableOpacity>
@@ -146,8 +151,8 @@ function Show(){
                                   <Text style={{color:'black'}}>{element.item.title}</Text>
                               </View> 
                                 <View style={{marginHorizontal:18,flexDirection:'row' }}>
-                                <Text style={{marginRight:12}}>{element.item.distance}</Text>
-                                <Text>{element.item.address}</Text>
+                                <Text style={{marginRight:12,color:'grey'}}>{element.item.distance}</Text>
+                                <Text style={{color:'grey'}}>{element.item.address}</Text>
                               </View>
                             </View>
                             <Divider style={{marginHorizontal:15}}/></TouchableOpacity>
@@ -173,7 +178,7 @@ function Show(){
                                             <Text style={{color:'black'}}>{element.item.title}</Text>
                                           </View> 
                                           <View style={{marginHorizontal:18,flexDirection:'row' }}>
-                                            <Text style={{marginRight:12}}>{element.item.distance}</Text>
+                                            <Text style={{marginRight:12,color:'grey'}}>{element.item.distance}</Text>
                                             <Text>{element.item.address}</Text>
                                           </View>
                                         </View>

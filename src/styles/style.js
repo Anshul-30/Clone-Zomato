@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         marginHorizontal: 10,
         marginVertical: 10,
-    
+        color:'grey'
     },
     seemore: {
 

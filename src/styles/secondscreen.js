@@ -27,7 +27,8 @@ text1:
 {marginHorizontal:5,
     textAlign:'center',
     marginBottom:7,
-    fontWeight:'500'
+    fontWeight:'500',
+    color:'grey'
 },
 button:{
     padding:10,

@@ -4,10 +4,11 @@ import {Text,View} from 'react-native'
 
 
 
-export default function YourOrder() {
+export default function YourOrder({navigation,}) {
   return (
     <View>
-        <Text>Your Order Screen</Text>
+        <Text style={{color:'black'}}>Your Order Screen</Text>
+        {/* // <Text>{navigation.getParam('title')}</Text> */} 
     </View>
   )
 }

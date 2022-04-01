@@ -1,37 +1,36 @@
-import React, { useState } from 'react'
+import React, { useState ,useRef} from 'react'
 import {Text,View,TouchableOpacity,Image,TextInput} from 'react-native'
 import LoginPage from '../styles/LoginStyle'
-
+import PhoneInput from "react-native-phone-number-input";
+ 
 
 
 export default function LoginInput({navigation}) {
 const [text, setText] = useState('')
-
+const phoneInput = useRef<PhoneInput>(null);
   return (
 
     <View>
     <View style={LoginPage.container}>
-         <View style={LoginPage.mainview}>
-            <Image source={require('../assets/images/india.png')} style={{height:25,width:25}}/>
-            <Image source={require('../assets/images/down-filled-triangular-arrow.png')} style={{height:20,width:20}}/>
-        </View>
+         
        
 
-
+        <PhoneInput
+            placeholder='Enter phone number'
+            containerStyle={{height:50,width:'99%',borderRadius:3}}
+            withDarkTheme
+            withShadow
+            autoFocus
+          />
 
 
        
 
-      <View style={LoginPage.number}>
-
-           <Text style={{padding:10,color:'black'}}>+91</Text>
-            <TextInput placeholder='Enter Phone Number' onChangeText={newText =>setText(newText)}/>
-            
-        </View>
+      
         
    </View>
             <Text>{text}</Text>
-  <TouchableOpacity onPress={()=>navigation.navigate('Home')}>
+  <TouchableOpacity onPress={()=>navigation.navigate('Home')} >
 
          <View style={LoginPage.continueview}>
              <Text style={{color:'white',fontWeight:'600',fontSize:18}}>Continue</Text>

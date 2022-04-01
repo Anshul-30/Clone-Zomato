@@ -16,7 +16,7 @@ import images from '../constants/imagepath'
 
 export default function Profile({ navigation }) {
   return (
-
+<>
     <SafeAreaView>
 
       <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -33,7 +33,7 @@ export default function Profile({ navigation }) {
 
       <ScrollView>
         <View style={{ paddingBottom: 200 }}>
-          <ProfileScreen />
+          <ProfileScreen navigation={navigation}/>
 
           <Divider width={0.4} style={styles.divider} />
 
@@ -83,6 +83,6 @@ export default function Profile({ navigation }) {
       </ScrollView>
 
     </SafeAreaView>
-
+</>
   )
 }

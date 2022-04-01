@@ -12,10 +12,11 @@ const Stack1 = createStackNavigator()
 
 
 export default function route() {
+  
   return (
     <NavigationContainer>
     <Stack1.Navigator>
-      {false? AuthStack(Stack1) : Stack(Stack1)}
+      {true? AuthStack(Stack1) : Stack(Stack1)}
     </Stack1.Navigator>
   </NavigationContainer>
   )

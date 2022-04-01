@@ -11,7 +11,7 @@ return(
     <>
     {/* ----------Status Bar -------- */}
       <View>
-        <StatusBar barStyle='dark-content' backgroundColor={'transparent'} />
+        <StatusBar barStyle='dark-content' backgroundColor={'white'} />
       </View>
 
 

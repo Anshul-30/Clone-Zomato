@@ -172,7 +172,7 @@ const Card = ({navigation})=>
 
                     <Divider width={0.3} style={{marginHorizontal:15,flex:.07}}></Divider>
                     <View style={{flex:.57}}>
-                        <Text style={{marginLeft:15,marginTop:4,marginRight:15}}>{element.item.saf}</Text>
+                        <Text style={{marginLeft:15,marginTop:4,marginRight:15,color:'grey'}}>{element.item.saf}</Text>
                     </View>
                     
                     </View>   
