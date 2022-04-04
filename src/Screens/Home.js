@@ -5,7 +5,7 @@ import Grid from '../Components/Grid'
 import Flatlist from '../Components/Flatlist'
 import Card from "../Components/Card";
 import styles from "../styles/style"
-
+import images from "../constants/imagepath";
 import PHOTOS from "../Components/PHOTOS";
 
 
@@ -40,7 +40,12 @@ const SeeMore =()=>{
 function Home({navigation}){
   const [showMenu, setShowMenu] = useState(false)
   const [text, setText] = useState('See More')
+
+
+  
   const seeMore = () =>{
+
+
     if(!showMenu){
       setShowMenu(true)
     }
@@ -78,7 +83,10 @@ function Home({navigation}){
     <TouchableOpacity onPress={seeMore}>
     <View style={styles.seemore } >
            <Text style={styles.textmore} >{text}</Text>
-           {/* <Image source={require('../Images/down.png')} style={{ height: 15, width: 15, marginTop: 11 }} /> */}
+           <Image 
+           source={showMenu ? require('../assets/images/657050.png') :require('../assets/images/down.png')}
+           style={{ height: 15, width: 15, marginTop: 11 }} 
+           />
          </View></TouchableOpacity>
         
         

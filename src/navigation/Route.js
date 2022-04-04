@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native'
 import AuthStack from './AuthStack'
@@ -12,11 +12,11 @@ const Stack1 = createStackNavigator()
 
 
 export default function route() {
-  
+  const [verify,setVerify] = useState(false)
   return (
     <NavigationContainer>
     <Stack1.Navigator>
-      {true? AuthStack(Stack1) : Stack(Stack1)}
+      {verify? AuthStack(Stack1, verify) : Stack(Stack1)}
     </Stack1.Navigator>
   </NavigationContainer>
   )

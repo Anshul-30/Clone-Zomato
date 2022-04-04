@@ -40,4 +40,5 @@ note:require('../assets/images/note.png'),
 book:require('../assets/images/book.png'),
 badge:require('../assets/images/badge.png'),
 about:require('../assets/images/info(1).png'),
+up: require('../assets/images/657050.png')
 }

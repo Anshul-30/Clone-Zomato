@@ -7,6 +7,7 @@ import Order from '../Components/Order'
 
 
 
+
 export default function ProfileFlatlist({navigation}) {
 
 function click(title)
@@ -15,10 +16,10 @@ function click(title)
   switch(title.id)
   {
     case '1':
-      navigation.navigate('Order')
+      navigation.navigate('Order',{ name:title.title})
       break;
       case '2':
-        navigation.navigate('Order')
+        navigation.navigate('Order',{ name:title.title})
   }
 //   if(title.id === "1")
 //   navigation.navigate('Order')
