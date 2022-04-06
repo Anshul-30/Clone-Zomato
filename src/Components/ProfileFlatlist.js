@@ -1,48 +1,46 @@
 import React from 'react'
-import{Text,View,Image,FlatList,TouchableOpacity} from 'react-native'
+import { Text, View, Image, FlatList, TouchableOpacity } from 'react-native'
 import Profilestyle from '../styles/Profilestyle'
 import Order from '../Components/Order'
+import navigationStrings from '../navigation/navigationStrings'
 
 
 
 
 
+export default function ProfileFlatlist({ navigation }) {
 
-export default function ProfileFlatlist({navigation}) {
-
-function click(title)
-{
-  // console.log(title.title)
-  switch(title.id)
-  {
-    case '1':
-      navigation.navigate('Order',{ name:title.title})
-      break;
+  function click(title) {
+    // console.log(title.title)
+    switch (title.id) {
+      case '1':
+        navigation.navigate(navigationStrings.ORDER, { name: title.title })
+        break;
       case '2':
-        navigation.navigate('Order',{ name:title.title})
-  }
+        navigation.navigate(navigationStrings.ORDER, { name: title.title })
+    }
 
-  
-  
-}
+
+
+  }
 
 
   return (
-    <FlatList 
+    <FlatList
       data={Order}
-      renderItem={(element)=>{
-        return(
-          <><TouchableOpacity onPress={()=>click(element.item)}>
-          <View style={{flexDirection:'row',padding:10}}>
-            <View style={Profilestyle.container}>
-            <Image source={element.item.img} style={{height:15,width:15}}/>
-            </View>
-            <View style={{margin:7}}>
-            <Text style={{color:'black',fontSize:17}}>{element.item.title}</Text></View>
-          </View></TouchableOpacity>
+      renderItem={(element) => {
+        return (
+          <><TouchableOpacity onPress={() => click(element.item)}>
+            <View style={{ flexDirection: 'row', padding: 10 }}>
+              <View style={Profilestyle.container}>
+                <Image source={element.item.img} style={{ height: 15, width: 15 }} />
+              </View>
+              <View style={{ margin: 7 }}>
+                <Text style={{ color: 'black', fontSize: 17 }}>{element.item.title}</Text></View>
+            </View></TouchableOpacity>
           </>
         )
       }}
-      />
+    />
   )
 }

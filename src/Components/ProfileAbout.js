@@ -2,13 +2,13 @@ import React from 'react'
 import {Text,View,Image,TouchableOpacity} from 'react-native'
 import Profilestyle from '../styles/Profilestyle'
 import images from '../constants/imagepath'
-
+import navigationStrings from '../navigation/navigationStrings'
 
 
 
 export default function ProfileAbout({navigation}) {
   return (
-    <TouchableOpacity onPress={()=>navigation.navigate('About')}>
+    <TouchableOpacity onPress={()=>navigation.navigate(navigationStrings.ABOUT)}>
     <View style={{flexDirection:'row',padding:10}}>
 
     <View style={Profilestyle.container}>

@@ -1,11 +1,11 @@
 import React from 'react'
-import {  Image, View,SafeAreaView ,StatusBar} from 'react-native'
+import {  Image,SafeAreaView ,StatusBar} from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import images from '../constants/imagepath';
 import Card from '../Components/Card';
 import HomeStack from '../Screens/Home';
 import WalletStack from '../Screens/Wallet';
-
+import navigationStrings from './navigationStrings';
 import OfferStack from '../Screens/Offer';
 
 import Statusbar from '../Components/StatusBar';
@@ -27,7 +27,7 @@ function Bottompart({navigation}) {
         {/* ----------- Screen 1----------- */}
 
 
-        <Tab.Screen  name="Delivery" component={HomeStack}
+        <Tab.Screen  name={navigationStrings.DELIVERY} component={HomeStack}
          options={{
           tabBarHideOnKeyboard:true,
           tabBarActiveTintColor:'black',
@@ -43,7 +43,7 @@ function Bottompart({navigation}) {
 
 
 
-        <Tab.Screen name= "Dinning" component={Card}
+        <Tab.Screen name= {navigationStrings.DINNING} component={Card}
          options={{
            tabBarActiveTintColor:'black',
            tabBarLabelStyle:{fontSize:13},
@@ -56,7 +56,7 @@ function Bottompart({navigation}) {
 
 
 
-        <Tab.Screen name ="Offer" component={OfferStack} 
+        <Tab.Screen name ={navigationStrings.OFFER} component={OfferStack} 
         options={{
           tabBarHideOnKeyboard:true,
           tabBarLabelStyle:{fontSize:13},
@@ -72,7 +72,7 @@ function Bottompart({navigation}) {
 
 
         
-        <Tab.Screen name="Wallet" component={WalletStack} 
+        <Tab.Screen name={navigationStrings.WALLET} component={WalletStack} 
         options={{ 
           tabBarActiveTintColor:'black',
           tabBarLabelStyle:{fontSize:13},

@@ -5,10 +5,10 @@ import HeaderScreen from '../Components/HeaderScree';
 
 function Offer() {
   return (
-  <>
-   <HeaderScreen/>
-  </>
-   
+    <>
+      <HeaderScreen />
+    </>
+
   )
 }
 

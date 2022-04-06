@@ -3,6 +3,8 @@ import { Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import images from '../constants/imagepath'
 import Profilestyle from '../styles/Profilestyle'
+import navigationStrings from '../navigation/navigationStrings'
+
 
 export default function ProfileScreen({ navigation }) {
   return (
@@ -25,7 +27,7 @@ export default function ProfileScreen({ navigation }) {
       </View>
 
 
-      <TouchableOpacity onPress={() => navigation.navigate("Setting")}>
+      <TouchableOpacity onPress={() => navigation.navigate(navigationStrings.SETTING)}>
         <View style={{ flexDirection: 'column', padding: 8 }}>
           <View style={{ alignItems: 'center' }} >
             <Image source={images.setting} style={Profilestyle.img} /></View>

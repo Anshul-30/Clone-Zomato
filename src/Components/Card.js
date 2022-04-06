@@ -3,6 +3,9 @@ import styles  from '../styles/style'
 import {View,Text,FlatList,Image,TouchableOpacity} from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import images from '../constants/imagepath'
+import navigationStrings from '../navigation/navigationStrings'
+
+
 
 const CARD=[
     {
@@ -101,7 +104,7 @@ const Card = ({navigation})=>
     function click(element){
             console.log(element.title)
             if(element.id === '1')
-            navigation.navigate('Menu')
+            navigation.navigate(navigationStrings.MENU)
     }
     return(
        <View >

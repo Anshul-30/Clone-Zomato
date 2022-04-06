@@ -13,7 +13,7 @@ import ProfileAbout from '../Components/ProfileAbout'
 import images from '../constants/imagepath'
 import { useDispatch } from 'react-redux'
 import { ContinueLogout } from '../redux/action/auth'
-
+import navigationStrings from '../navigation/navigationStrings'
 
 
 
@@ -27,7 +27,7 @@ export default function Profile({ navigation }) {
         <Image style={Profilestyle.image} source={images.left_arrowhead} />
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Dinning')}>
+      <TouchableOpacity onPress={() => navigation.navigate(navigationStrings.DINNING)}>
         <ProfileHeader />
       </TouchableOpacity>
 

@@ -6,7 +6,7 @@ import ActionSheet ,{SheetManager}from 'react-native-actions-sheet'
 import { FlatList, ScrollView } from 'react-native-gesture-handler'
 import saved from './Address'
 import images from '../constants/imagepath'
-
+import navigationStrings from '../navigation/navigationStrings'
 
 
 
@@ -48,7 +48,7 @@ function act(){
               <Image source={images.down_arrow } style={{height:15,width:15,marginTop:10}}/>
               </View>
               <Text style={{marginLeft:33,color:'black'}}>{add}</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+            <TouchableOpacity onPress={() => navigation.navigate(navigationStrings.PROFILE)}>
             <View style={{justifyContent:'flex-end'}}>
             <Image style={styles.location1} source={images.wine} />
            </View>
