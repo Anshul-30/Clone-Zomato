@@ -15,7 +15,12 @@ const Profilestyle = StyleSheet.create({
     flexDirection:'row',
     marginTop:20,
     justifyContent:'space-between'
-},
+    },
+    text1:{
+        fontSize:30,
+        fontWeight:'500',
+        color:'black'
+    },
     text:{
         margin:10, 
         height:70,
@@ -47,8 +52,31 @@ const Profilestyle = StyleSheet.create({
     img1:{
         marginLeft:10
     },
+    viewscreen:{ flexDirection: 'column', padding: 8 },
     About:
-    {flexDirection:'row',padding:10}
+    {
+        flexDirection:'row',
+        padding:10
+    },
+    screencontainer:{ flexDirection: 'row', margin: 13, justifyContent: 'space-around' },
+    wineimg:{
+        height:60,
+        width:60,
+    },
+    playimg:{ 
+        height:10, 
+        width:10, 
+        margin:4
+    },
+    viewwine:{
+        height:80,
+        width:80,
+        borderRadius:40,
+        backgroundColor:'wheat',
+        alignItems:'center',
+        justifyContent:'center',
+        marginRight:20
+    },
     
 
 })

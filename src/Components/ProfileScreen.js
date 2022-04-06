@@ -10,17 +10,17 @@ import colors from '../styles/colors'
 export default function ProfileScreen({ navigation }) {
   return (
 
-    <View style={{ flexDirection: 'row', margin: 13, justifyContent: 'space-around' }}>
+    <View style={Profilestyle.screencontainer}>
 
 
-      <View style={{ flexDirection: 'column', padding: 8 }}>
+      <View style={Profilestyle.viewscreen}>
         <View style={{ alignItems: 'center' }} >
           <Image source={images.like} style={Profilestyle.img} /></View>
         <Text style={{ color: colors.black}}>Likes</Text>
       </View>
 
 
-      <View style={{ flexDirection: 'column', padding: 8 }}>
+      <View style={Profilestyle.viewscreen}>
         <View style={{ alignItems: 'center' }} >
           <Image source={images.notification} style={Profilestyle.img} />
         </View >
@@ -29,7 +29,7 @@ export default function ProfileScreen({ navigation }) {
 
 
       <TouchableOpacity onPress={() => navigation.navigate(navigationStrings.SETTING)}>
-        <View style={{ flexDirection: 'column', padding: 8 }}>
+        <View style={Profilestyle.viewscreen}>
           <View style={{ alignItems: 'center' }} >
             <Image source={images.setting} style={Profilestyle.img} /></View>
           <Text style={{ color: colors.black }}>Settings</Text>
@@ -37,7 +37,7 @@ export default function ProfileScreen({ navigation }) {
       </TouchableOpacity>
 
 
-      <View style={{ flexDirection: 'column', padding: 8 }}>
+      <View style={Profilestyle.viewscreen}>
         <View style={{ alignItems: 'center' }} >
           <Image source={images.payment} style={Profilestyle.img} /></View>
         <Text style={{ color: colors.black }}>Payment</Text>

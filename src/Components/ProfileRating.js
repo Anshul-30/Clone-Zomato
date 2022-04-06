@@ -10,7 +10,7 @@ export default function ProfileRating() {
   return (
     <View style={{flexDirection:'row',padding:8,justifyContent:'space-between'}}>
           <View style={{flexDirection:'row'}}>
-          <View style={{height:30,width:30,borderRadius:15,backgroundColor:'#dee3e0',justifyContent:'center',alignItems:'center',marginLeft:10}}>
+          <View style={[Profilestyle.container,{marginLeft:10}]}>
           <Image source={images.star1} style={styles.leftarrowimg}/>
           </View>
 

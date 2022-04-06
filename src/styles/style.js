@@ -21,10 +21,7 @@ const styles = StyleSheet.create({
         height:20,
         width:20, 
     },
-    fav:{
-        height:15,
-        width:15
-    },
+    
     favimg:{
         height:15,
         width:15
@@ -45,6 +42,7 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 15,
         flex:1
     },
+    badge:{ height: 17, width: 17 },
     dis: {
         height: 10,
         width: 10,
