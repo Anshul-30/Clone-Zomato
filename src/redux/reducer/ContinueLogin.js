@@ -1,11 +1,14 @@
+import type from "../type"
+
+
 const initialState = false
 
-const Login = (State= initialState,action)=>{
-    switch(action.type){
-        case 'LogIn' :return State = true
-        case 'LogOut': return State= false
-        default : return State
+const userStatus = (state = initialState, action) => {
+    switch (action.type) {
+        case type.LOGIN: return state = true;
+        case type.LOGOUT: return state = false;
+        default: return state
     }
 
 }
-export default Login
+export default userStatus

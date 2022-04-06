@@ -1,12 +1,6 @@
-export const continueLogin =()=>{
-    return {
-        type:"LogIn"
-    }
-}
+import * as auth from './auth'
 
+export default{
+...auth
 
-export const ContinueLogout =()=>{
-    return {
-        type:"LogOut"
-    }
 }

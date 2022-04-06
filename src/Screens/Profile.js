@@ -12,7 +12,7 @@ import ProfileRating from '../Components/ProfileRating'
 import ProfileAbout from '../Components/ProfileAbout'
 import images from '../constants/imagepath'
 import { useDispatch } from 'react-redux'
-import { ContinueLogout } from '../redux/action'
+import { ContinueLogout } from '../redux/action/auth'
 
 
 

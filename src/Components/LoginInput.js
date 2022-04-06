@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { Text, View, TouchableOpacity, Image, TextInput } from 'react-native'
 import LoginPage from '../styles/LoginStyle'
 import PhoneInput from "react-native-phone-number-input";
-import { continueLogin } from '../redux/action';
+import { continueLogin } from '../redux/action/auth';
 import {useDispatch} from 'react-redux'
 
 
@@ -38,7 +38,6 @@ export default function LoginInput() {
         <PhoneInput
         displayInitialValueAsLocalNumber={true}
           placeholder='Enter phone number'
-        
           containerStyle={{ height: 70, width: '99%', borderRadius: 3 }}
           withDarkTheme
           withShadow

@@ -1,10 +1,10 @@
 import React from "react";
 import { combineReducers} from 'redux'
-import Login from "./ContinueLogin";
+import userStatus from "./ContinueLogin";
 
 const rootReducer = combineReducers(
     {
-       Login,
+       userStatus
        
     }
 )
