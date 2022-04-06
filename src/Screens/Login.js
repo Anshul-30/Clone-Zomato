@@ -6,8 +6,8 @@ import LoginInput from '../Components/LoginInput'
 import LoginGoogle from '../Components/LoginGoogle'
 
 
-
 export default function Login({navigation}) {
+  
   return (
  <>
  <ScrollView>
@@ -18,7 +18,7 @@ export default function Login({navigation}) {
                       Log in or sign up
               </Divider>
      </View>
-    <LoginInput navigation={navigation}/>
+    <LoginInput />
     
       <View style={{marginHorizontal:30}}>
           <Divider orientation='center' >

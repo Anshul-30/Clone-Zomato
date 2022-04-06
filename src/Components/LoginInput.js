@@ -2,29 +2,31 @@ import React, { useState, useRef } from 'react'
 import { Text, View, TouchableOpacity, Image, TextInput } from 'react-native'
 import LoginPage from '../styles/LoginStyle'
 import PhoneInput from "react-native-phone-number-input";
+import { continueLogin } from '../redux/action';
+import {useDispatch} from 'react-redux'
 
 
 
-export default function LoginInput({ navigation }) {
+export default function LoginInput() {
+  const dispatch = useDispatch();
   const [text, setText] = useState('')
   const [show, setShow] = useState(false)
 
 
-
+  const phoneRegex = /^[0-9]{10}$/
   const number = () => {
-    if (text.length == 10) 
+    if (phoneRegex.test(text)) 
     {
       setShow(false)
-      navigation.navigate('New', { num: text })
+      // navigation.navigate('New', { num: text })
+      dispatch(continueLogin())
+      
     }
-   
-
     
     else 
     {
       setShow(true)
     }
-
 
   }
 
@@ -32,8 +34,6 @@ export default function LoginInput({ navigation }) {
 
     <View>
       <View style={LoginPage.container}>
-
-
 
         <PhoneInput
         displayInitialValueAsLocalNumber={true}
@@ -44,8 +44,7 @@ export default function LoginInput({ navigation }) {
           withShadow
           autoFocus
           onChangeText={(value) => setText(value)}
-        />
-
+          />
 
       </View>
 

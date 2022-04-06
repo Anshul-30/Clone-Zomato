@@ -11,10 +11,14 @@ import ProfileScreen from '../Components/ProfileScreen'
 import ProfileRating from '../Components/ProfileRating'
 import ProfileAbout from '../Components/ProfileAbout'
 import images from '../constants/imagepath'
+import { useDispatch } from 'react-redux'
+import { ContinueLogout } from '../redux/action'
+
 
 
 
 export default function Profile({ navigation }) {
+  const dispatch = useDispatch()
   return (
 <>
     <SafeAreaView>
@@ -75,8 +79,9 @@ export default function Profile({ navigation }) {
             <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Send Feedback </Text>
             <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Report a Safety Emergency  </Text>
             <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Rate us on the Play Store</Text>
-           <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
-            <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Log Out </Text></TouchableOpacity>
+           <TouchableOpacity onPress={()=>dispatch(ContinueLogout())}>
+            <Text style={{ paddingTop: 15, fontSize: 17, color: 'black' }}>Log Out </Text>
+            </TouchableOpacity>
 
           </View>
         </View>

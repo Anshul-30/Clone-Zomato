@@ -1,19 +1,19 @@
 import React from 'react'
-
-import { NavigationContainer } from '@react-navigation/native'
-import Stack from './src/navigation/Stack'
 import Route from './src/navigation/Route'
-import Input from './Input'
-import Stackdemo from './Stackdemo'
+import store from './src/Store'
+import {Provider} from 'react-redux'
+
+
 
 
 const App = () => {
 
   return (
     <>
-   <Stackdemo/>
- {/* <Route/> */}
-      
+    <Provider  store={store}>
+  
+    <Route/>
+      </Provider>
   </>
   )
 }

@@ -3,20 +3,16 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native'
 import AuthStack from './AuthStack'
 import Stack from './Stack'
+import Login from '../redux/reducer/ContinueLogin'
+import {useSelector} from 'react-redux'
 const Stack1 = createStackNavigator()
 
-
-
-
-
-
-
 export default function route() {
-  const [verify,setVerify] = useState(false)
+  const login = useSelector (state => state.Login);
   return (
     <NavigationContainer>
     <Stack1.Navigator>
-      {verify? AuthStack(Stack1, verify) : Stack(Stack1)}
+      {login? Stack(Stack1):AuthStack(Stack1) }
     </Stack1.Navigator>
   </NavigationContainer>
   )

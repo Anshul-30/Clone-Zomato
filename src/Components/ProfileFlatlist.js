@@ -21,11 +21,7 @@ function click(title)
       case '2':
         navigation.navigate('Order',{ name:title.title})
   }
-//   if(title.id === "1")
-//   navigation.navigate('Order')
-//   else
-//  if(title.id === "2")
-//    navigation.navigate('Order')
+
   
   
 }
