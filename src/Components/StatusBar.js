@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import { Text, TextInput, View, Image, TouchableOpacity, Alert } from 'react-native'
 import styles from '../styles/style'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
@@ -8,7 +8,7 @@ import saved from './Address'
 import images from '../constants/imagepath'
 import navigationStrings from '../navigation/navigationStrings'
 import colors from '../styles/colors'
-
+import actionsheet from '../styles/actionsheetStyle'
 
 
 
@@ -83,11 +83,11 @@ function Statusbar({ navigation }) {
       <ActionSheet id="Action" >
 
 
-        <View style={{ left: 0, right: 0, height: '75%', borderTopLeftRadius: 45, borderTopRightRadius: 45 }} >
+        <View style={actionsheet.container} >
           <View style={{ height: '200%' }}>
             {/* ----------Header---------- */}
             <TouchableOpacity >
-              <Text style={{ margin: 10, fontSize: 20, color: 'black' }}>Select a location</Text>
+              <Text style={actionsheet.maintext}>Select a location</Text>
             </TouchableOpacity>
 
 
@@ -102,8 +102,8 @@ function Statusbar({ navigation }) {
               <ScrollView>
 
                 <View style={{ marginHorizontal: 20 }}>
-                  <Text style={{ color: 'red', padding: 10, paddingBottom: 2 }}> Use current location</Text>
-                  <Text style={{ color: 'grey', padding: 10, paddingTop: 0 }}> {add}</Text>
+                  <Text style={actionsheet.text}> Use current location</Text>
+                  <Text style={actionsheet.loc}> {add}</Text>
                 </View>
 
 
@@ -111,7 +111,7 @@ function Statusbar({ navigation }) {
 
 
                 <View style={{ margin: 10 }}>
-                  <Text style={{ fontSize: 17, padding: 10, color: 'black' }}>
+                  <Text style={actionsheet.text1}>
                     Saved Addresses
                   </Text>
                   {/* -----------Flatlist1---------- */}
@@ -120,16 +120,19 @@ function Statusbar({ navigation }) {
                       return (
                         <>
                           <TouchableOpacity onPress={() => [setAdd(element.item.address)]} >
+
                             <View style={{ padding: 10 }}>
-                              <View style={{ marginHorizontal: 25, flexDirection: 'row' }}>
-                                <Image source={images.home} style={{ height: 20, width: 20, marginRight: 25 }} />
+
+                              <View style={actionsheet.loc1}>
+                                <Image source={images.home} style={actionsheet.img} />
                                 <Text style={{ color: colors.black }}>{element.item.title}</Text>
                               </View>
-                              <View style={{ marginHorizontal: 18, flexDirection: 'row' }}>
 
-                                <Text style={{ marginRight: 12, color: 'grey' }}>{element.item.distance}</Text>
+                              <View style={actionsheet.dis}>
+                                <Text style={actionsheet.distext}>{element.item.distance}</Text>
                                 <Text style={{ color: colors.grey }}>{element.item.address}</Text>
                               </View>
+
                             </View>
                             <Divider style={{ marginHorizontal: 15 }} /></TouchableOpacity>
                         </>)
@@ -137,8 +140,8 @@ function Statusbar({ navigation }) {
 
                 </View>
 
-                <View>
-                  <Text style={{ fontSize: 17, padding: 10, color: 'black' }}>
+                <View style={{ margin: 10 }}>
+                  <Text style={actionsheet.text1}>
                     Nearby locations
                   </Text>
 
@@ -150,15 +153,19 @@ function Statusbar({ navigation }) {
                           <TouchableOpacity onPress={() => [setAdd(element.item.address)]}>
 
                             <View style={{ padding: 10 }}>
-                              <View style={{ marginHorizontal: 25, flexDirection: 'row' }}>
-                                <Image source={images.location} style={{ height: 20, width: 20, marginRight: 25 }} />
+
+                              <View style={actionsheet.loc1}>
+                                <Image source={images.location} style={actionsheet.img} />
                                 <Text style={{ color: colors.black }}>{element.item.title}</Text>
                               </View>
-                              <View style={{ marginHorizontal: 18, flexDirection: 'row' }}>
-                                <Text style={{ marginRight: 12, color: 'grey' }}>{element.item.distance}</Text>
+
+                              <View style={actionsheet.dis}>
+                                <Text style={actionsheet.distext}>{element.item.distance}</Text>
                                 <Text style={{ color: colors.grey }}>{element.item.address}</Text>
                               </View>
+
                             </View>
+
                             <Divider style={{ marginHorizontal: 15 }} /></TouchableOpacity>
                         </>)
                     }} />
@@ -166,8 +173,8 @@ function Statusbar({ navigation }) {
 
 
 
-                <View>
-                  <Text style={{ fontSize: 17, padding: 10, color: 'black' }}>
+                <View style={{ margin: 10 }}>
+                  <Text style={actionsheet.text1}>
                     Recent locations
                   </Text>
                   <FlatList data={saved}
@@ -177,15 +184,19 @@ function Statusbar({ navigation }) {
                           <TouchableOpacity onPress={() => setAdd(element.item.address)} >
 
                             <View style={{ padding: 10 }}>
-                              <View style={{ marginHorizontal: 25, flexDirection: 'row' }}>
-                                <Image source={images.location} style={{ height: 20, width: 20, marginRight: 25 }} />
+
+                              <View style={actionsheet.loc1}>
+                                <Image source={images.location} style={actionsheet.img} />
                                 <Text style={{ color: colors.black }}>{element.item.title}</Text>
                               </View>
-                              <View style={{ marginHorizontal: 18, flexDirection: 'row' }}>
-                                <Text style={{ marginRight: 12, color: 'grey' }}>{element.item.distance}</Text>
+
+                              <View style={actionsheet.dis}>
+                                <Text style={actionsheet.distext}>{element.item.distance}</Text>
                                 <Text>{element.item.address}</Text>
                               </View>
+
                             </View>
+                            
                             <Divider style={{ marginHorizontal: 15 }} /></TouchableOpacity>
                         </>)
                     }} />
