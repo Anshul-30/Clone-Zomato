@@ -9,7 +9,7 @@ export default function ProfileHeader() {
     <View style={Profilestyle.main}>
     <View style={Profilestyle.text}>
         <Text style={{fontSize:30,fontWeight:'500',color:'black'}}>111111</Text>
-            <View style={{flexDirection:'row',marginLeft:10}}>
+            <View style={Profilestyle.About}>
                 <Text style={{color:'red',fontSize:13}}>View activity</Text>
                 <Image source={images.play} style={{height:10,width:10,margin:4}}/>
            </View>

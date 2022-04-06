@@ -33,7 +33,7 @@ export default function ProfileFlatlist({ navigation }) {
       renderItem={(element) => {
         return (
           <><TouchableOpacity onPress={() => click(element.item)}>
-            <View style={{ flexDirection: 'row', padding: 10 }}>
+            <View style={Profilestyle.About}>
               <View style={Profilestyle.container}>
                 <Image source={element.item.img} style={styles.favimg} />
               </View>

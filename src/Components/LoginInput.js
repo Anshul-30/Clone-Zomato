@@ -50,7 +50,7 @@ export default function LoginInput() {
       <TouchableOpacity onPress={number} >
 
         <View style={LoginPage.continueview}>
-          <Text style={{ color: 'white', fontWeight: '600', fontSize: 18 }}>Continue</Text>
+          <Text style={LoginPage.logininputtext}>Continue</Text>
         </View>
 
       </TouchableOpacity>

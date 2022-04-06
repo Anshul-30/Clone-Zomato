@@ -15,7 +15,7 @@ export default function ProfileFlatlist2() {
       renderItem={(element)=>{
         return(
           <>
-          <View style={{flexDirection:'row',padding:10}}>
+          <View style={Profilestyle.About}>
             <View style={Profilestyle.container}>
             <Image source={element.item.img} style={styles.favimg}/></View>
             <View style={{margin:7}}>

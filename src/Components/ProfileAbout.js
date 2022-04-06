@@ -10,7 +10,7 @@ import colors from '../styles/colors'
 export default function ProfileAbout({navigation}) {
   return (
     <TouchableOpacity onPress={()=>navigation.navigate(navigationStrings.ABOUT)}>
-    <View style={{flexDirection:'row',padding:10}}>
+    <View style={Profilestyle.About}>
 
     <View style={Profilestyle.container}>
      

@@ -46,7 +46,9 @@ const Profilestyle = StyleSheet.create({
     },
     img1:{
         marginLeft:10
-    }
+    },
+    About:
+    {flexDirection:'row',padding:10}
     
 
 })

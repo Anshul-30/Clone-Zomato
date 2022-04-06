@@ -60,6 +60,8 @@ const LoginPage = StyleSheet.create({
         backgroundColor:'#F35265',
         borderRadius:10,
         marginVertical:15
-    }
+    },
+    logingoogleheader:{flexDirection:'row',justifyContent:'center',alignItems:'center'},
+    logininputtext:{ color: 'white', fontWeight: '600', fontSize: 18 }
 })
 export default LoginPage

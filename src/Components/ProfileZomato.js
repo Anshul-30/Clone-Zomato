@@ -8,7 +8,7 @@ import colors from '../styles/colors'
 
 export default function ProfileZomato() {
   return (
-    <View style={{ flexDirection: 'row', padding: 10 }}>
+    <View style={ Profilestyle.About}>
 
           <View style={Profilestyle.container}>
               <Image source={images.badge} style={{ height: 17, width: 17 }} />

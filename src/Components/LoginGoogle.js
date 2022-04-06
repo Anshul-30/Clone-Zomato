@@ -6,7 +6,7 @@ import images from '../constants/imagepath'
 
 export default function LoginGoogle() {
   return (
-    <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
+    <View style={LoginPage.logingoogleheader}>
      <View style={LoginPage.google}>
          <Image source={images.google} style={LoginPage.image}/>
     </View>
