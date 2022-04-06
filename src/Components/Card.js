@@ -4,6 +4,7 @@ import {View,Text,FlatList,Image,TouchableOpacity} from 'react-native'
 import { Divider } from 'react-native-elements/dist/divider/Divider'
 import images from '../constants/imagepath'
 import navigationStrings from '../navigation/navigationStrings'
+import colors from '../styles/colors'
 
 
 
@@ -116,55 +117,55 @@ const Card = ({navigation})=>
                return(
                 <TouchableOpacity onPress={()=>click(element.item)} activeOpacity={.9}>
                  <View style={[styles.card]} >
-                    <View style={{alignItems:"center" ,flexDirection:'row',justifyContent:'center'}}>
+                    <View style={styles.viewcard}>
                         <Image source={element.item.url} style={styles.imagecard} />
                         
 
                         <View style={styles.pro}>
-                            <Text style={{color:'white',fontSize:13}}>{element.item.pro}</Text>
+                            <Text style={styles.protext}>{element.item.pro}</Text>
                         </View>
 
 
                         <View style={styles.fav}>
-                            <Image source={element.item.fav} style={{height:15,width:15}}/>
+                            <Image source={element.item.fav} style={styles.favimg}/>
                         </View>
 
                                 
                         <View style={styles.leftarrow}><TouchableOpacity>
-                        <Image source={element.item.left} style={{height:20,width:20, }}/></TouchableOpacity>
+                        <Image source={element.item.left} style={styles.leftarrowimg}/></TouchableOpacity>
                         </View>
 
 
 
                     <View style={styles.rightarrow}><TouchableOpacity>
-                        <Image source={element.item.uri} style={{height:20,width:20 ,}}/></TouchableOpacity>
+                        <Image source={element.item.uri} style={styles.leftarrowimg}/></TouchableOpacity>
                     </View>
 
 
                     <View style={styles.arrival}>
-                        <Text style={{color:'black'}}>{element.item.arrival}</Text>
+                        <Text style={{color:colors.black}}>{element.item.arrival}</Text>
                     </View>
 
 
                     <View style={styles.offer}>
                         <View style={{flexDirection:'row'}}>
                             <Image source={element.item.dis} style={styles.dis}/>
-                            <Text style={{color:'white'}}>{element.item.offer1}</Text>
+                            <Text style={{color:colors.white}}>{element.item.offer1}</Text>
                         </View>
                         <View>
-                            <Text style={{color:'white',textAlign:'center'}}>{element.item.offer2}</Text>
+                            <Text style={{color:colors.white,textAlign:'center'}}>{element.item.offer2}</Text>
                         </View>
                     </View>
 
                     </View>
 
                  <View style={{flex:1}}>
-                    <View style={{flex:.5,flexDirection:'row',justifyContent:'space-between'}}>
+                    <View style={styles.viewicon}>
                         <Text style={styles.text5}>{element.item.title}</Text>
                         <Image style={styles.iconimage}source={element.item.img}/>
                     </View>
 
-                    <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:15,marginRight:15}}>
+                    <View style={styles.viewloc}>
                         <Text style={styles.text7}>{element.item.loc}</Text>
                         <Text style={styles.text7}>{element.item.price}</Text>
                     </View>
@@ -173,9 +174,9 @@ const Card = ({navigation})=>
                         {/* divider is element to draw horiztal or vertical line */}
 
 
-                    <Divider width={0.3} style={{marginHorizontal:15,flex:.07}}></Divider>
+                    <Divider width={0.3} style={styles.div}></Divider>
                     <View style={{flex:.57}}>
-                        <Text style={{marginLeft:15,marginTop:4,marginRight:15,color:'grey'}}>{element.item.saf}</Text>
+                        <Text style={[styles.saf,{color:colors.grey}]}>{element.item.saf}</Text>
                     </View>
                     
                     </View>   

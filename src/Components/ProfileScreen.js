@@ -4,6 +4,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 import images from '../constants/imagepath'
 import Profilestyle from '../styles/Profilestyle'
 import navigationStrings from '../navigation/navigationStrings'
+import colors from '../styles/colors'
 
 
 export default function ProfileScreen({ navigation }) {
@@ -15,7 +16,7 @@ export default function ProfileScreen({ navigation }) {
       <View style={{ flexDirection: 'column', padding: 8 }}>
         <View style={{ alignItems: 'center' }} >
           <Image source={images.like} style={Profilestyle.img} /></View>
-        <Text style={{ color: 'black' }}>Likes</Text>
+        <Text style={{ color: colors.black}}>Likes</Text>
       </View>
 
 
@@ -23,7 +24,7 @@ export default function ProfileScreen({ navigation }) {
         <View style={{ alignItems: 'center' }} >
           <Image source={images.notification} style={Profilestyle.img} />
         </View >
-        <Text style={{ color: 'black' }}>Notification</Text>
+        <Text style={{ color: colors.black }}>Notification</Text>
       </View>
 
 
@@ -31,7 +32,7 @@ export default function ProfileScreen({ navigation }) {
         <View style={{ flexDirection: 'column', padding: 8 }}>
           <View style={{ alignItems: 'center' }} >
             <Image source={images.setting} style={Profilestyle.img} /></View>
-          <Text style={{ color: 'black' }}>Settings</Text>
+          <Text style={{ color: colors.black }}>Settings</Text>
         </View>
       </TouchableOpacity>
 
@@ -39,7 +40,7 @@ export default function ProfileScreen({ navigation }) {
       <View style={{ flexDirection: 'column', padding: 8 }}>
         <View style={{ alignItems: 'center' }} >
           <Image source={images.payment} style={Profilestyle.img} /></View>
-        <Text style={{ color: 'black' }}>Payment</Text>
+        <Text style={{ color: colors.black }}>Payment</Text>
       </View>
     </View>
   )

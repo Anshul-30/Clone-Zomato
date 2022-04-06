@@ -4,6 +4,7 @@ import { Divider } from 'react-native-elements/dist/divider/Divider'
 import Item from './Item'
 import secondstyle from '../styles/secondscreen'
 import images from '../constants/imagepath'
+import colors from '../styles/colors'
 
 
 
@@ -50,7 +51,7 @@ function Screen() {
 
                   <View style={{ flex: 0.7 }}>
                     <Text style={secondstyle.text2}>{element.item.title}</Text>
-                    <Text numberOfLines={2} style={{ color: 'black' }}>{element.item.des}</Text>
+                    <Text numberOfLines={2} style={{ color: colors.black }}>{element.item.des}</Text>
                   </View>
 
                 </View>

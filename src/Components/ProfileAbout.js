@@ -3,7 +3,8 @@ import {Text,View,Image,TouchableOpacity} from 'react-native'
 import Profilestyle from '../styles/Profilestyle'
 import images from '../constants/imagepath'
 import navigationStrings from '../navigation/navigationStrings'
-
+import styles from '../styles/style'
+import colors from '../styles/colors'
 
 
 export default function ProfileAbout({navigation}) {
@@ -13,12 +14,12 @@ export default function ProfileAbout({navigation}) {
 
     <View style={Profilestyle.container}>
      
-            <Image source={images.about}style={{height:15,width:15}}/>
+            <Image source={images.about}style={styles.favimg}/>
     </View>
 
 
     <View  style={{margin:7}}>
-           <Text style={{color:'black',fontSize:17}}>About</Text>
+           <Text style={styles.comontext}>About</Text>
     </View>
     
   </View></TouchableOpacity>

@@ -2,6 +2,7 @@ import React from 'react'
 import {Text,View,Image} from 'react-native'
 import Profilestyle from '../styles/Profilestyle'
 import images from '../constants/imagepath'
+import colors from '../styles/colors'
 
 
 
@@ -15,7 +16,7 @@ export default function ProfileZomato() {
 
 
           <View style={{ margin: 7 }}>
-              <Text style={{ color: 'black', fontSize: 17 }}>Zomato Pro</Text>
+              <Text style={{ color: colors.black, fontSize: 17 }}>Zomato Pro</Text>
           </View>
           </View>
   )

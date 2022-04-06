@@ -7,6 +7,35 @@ const styles = StyleSheet.create({
         height: 15,
         width: 15
     },
+    viewcard:{
+        alignItems:"center" ,
+        flexDirection:'row',
+        justifyContent:'center'
+    },
+    comontext:{color:'black',fontSize:17},
+    protext:{
+        color:'white',
+        fontSize:13
+    },
+    leftarrowimg:{
+        height:20,
+        width:20, 
+    },
+    fav:{
+        height:15,
+        width:15
+    },
+    favimg:{
+        height:15,
+        width:15
+    },
+    div:{
+        marginHorizontal:15,
+        flex:.07
+    },
+    viewicon:{flex:.5,flexDirection:'row',justifyContent:'space-between'},
+    saf:{marginLeft:15,marginTop:4,marginRight:15},
+    viewloc:{flexDirection:'row',justifyContent:'space-between',marginLeft:15,marginRight:15},
     imagecard: {
         // justifyContent: 'center',
         height: 200,
