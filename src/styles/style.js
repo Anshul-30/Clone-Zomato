@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     viewcard:{
         alignItems:"center" ,
         flexDirection:'row',
-        justifyContent:'center'
+        // justifyContent:'center'
     },
     comontext:{color:'black',fontSize:17},
     protext:{
@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
         // justifyContent: 'center',
         height: 200,
         // width:400,
-        // width: 340,
+        width: 400,
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
-        flex:1
+        // flex:125
     },
     badge:{ height: 17, width: 17 },
     dis: {
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
 
     },
     searchtxt1: {
-        
+        height:25,
         fontSize: 12,
         width: '82%',
         color: 'black',
@@ -255,6 +255,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     card: {
+        flex:1,
         margin: 10,
         justifyContent: 'center',
         height: 300,

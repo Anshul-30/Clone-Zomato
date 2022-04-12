@@ -4,8 +4,7 @@ import Profilestyle from '../styles/Profilestyle'
 import Order from '../Components/Order'
 import navigationStrings from '../navigation/navigationStrings'
 import styles from '../styles/style'
-import colors from '../styles/colors'
-
+ 
 
 
 
@@ -14,7 +13,7 @@ export default function ProfileFlatlist({ navigation }) {
 
   function click(title) {
     // console.log(title.title)
-    switch (title.id) {
+    switch (title.key) {
       case '1':
         navigation.navigate(navigationStrings.ORDER, { name: title.title })
         break;
@@ -28,21 +27,25 @@ export default function ProfileFlatlist({ navigation }) {
 
 
   return (
-    <FlatList
-      data={Order}
-      renderItem={(element) => {
-        return (
-          <><TouchableOpacity onPress={() => click(element.item)}>
-            <View style={Profilestyle.About}>
-              <View style={Profilestyle.container}>
-                <Image source={element.item.img} style={styles.favimg} />
-              </View>
-              <View style={{ margin: 7 }}>
-                <Text style={styles.comontext}>{element.item.title}</Text></View>
-            </View></TouchableOpacity>
-          </>
-        )
-      }}
-    />
+    <>
+      {
+        Order.map((item) => {
+          return (
+            <><TouchableOpacity onPress={() => click(item)}>
+              <View style={Profilestyle.About}>
+                <View style={Profilestyle.container}>
+                  <Image source={item.img} style={styles.favimg} />
+                </View>
+                <View style={{ margin: 7 }}>
+                  <Text style={styles.comontext}>{item.title}</Text></View>
+              </View></TouchableOpacity>
+            </>
+          )
+
+        })
+      }
+
+    </>
+    
   )
 }

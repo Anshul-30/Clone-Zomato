@@ -7,9 +7,10 @@ import Card from "../Components/Card";
 import styles from "../styles/style"
 import images from "../constants/imagepath";
 import PHOTOS from "../Components/PHOTOS";
+import { LogBox } from "react-native";
 
-
-
+LogBox.ignoreAllLogs()
+// ("VirtualizedLists should never be nested inside plain ScrollViews with the same orientation beacuse it can break windowing and other functionality - use another virtualisedList-backed container instead")
 
 const SeeMore =()=>{
 

@@ -2,18 +2,18 @@ import { NavigationContainer } from '@react-navigation/native'
 import images from '../constants/imagepath'
 const Order=[
     {
-        id:'1',
+        key:'1',
         title:'Your Orders',
         img:images.note
 },
 {
-    id:'2',
+    key:'2',
     title:' Favourite Orders',
     img:images.like,
     
 },
 {
-    id:'3',
+    key:'3',
     title:'Address Book',
     img:images.book
 },

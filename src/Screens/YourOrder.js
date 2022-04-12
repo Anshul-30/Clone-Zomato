@@ -10,6 +10,7 @@ export default function YourOrder({route}) {
     <View>
         <Text style={{color:'black'}}>Your Order Screen</Text>
         <Text>{name}</Text>
+        {/* <Text>{}</Text> */}
     </View>
   )
 }
