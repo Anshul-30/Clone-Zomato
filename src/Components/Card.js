@@ -33,18 +33,18 @@ const Card = ({ navigation }) => {
                             <View style={[styles.card]} >
                                 <View style={styles.viewcard}>
                                     <Image source={element.item.url} style={styles.imagecard} />
-                                    <View style={{ flex: 1, alignItems: "stretch" }}>
+                                    {/* <View style={{ flex: 1, alignItems: "stretch" }}> */}
 
-                                        <ScrollView horizontal={true}>
+                                        {/* <ScrollView horizontal={true}>
 
 
                                             {
                                                 CARD.map((items) => {
                                                     return (
-                                                        <>
+                                                        <> */}
                                     {/* <Image source={items.url} style={styles.imagecard} /> */}
 
-                                                            <Image source={items.url} style={styles.imagecard} />
+                                                            {/* <Image source={items.url} style={styles.imagecard} />
 
                                                         </>
                                                     )
@@ -52,8 +52,8 @@ const Card = ({ navigation }) => {
 
 
                                             }
-                                        </ScrollView>
-                                    </View>
+                                        </ScrollView> */}
+                                    {/* </View> */}
                                     {/* <Crousel imageArray={element?.item?.imageArray} /> */}
 
                                     <View style={styles.pro}>

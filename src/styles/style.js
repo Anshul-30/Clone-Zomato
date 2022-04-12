@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
         // justifyContent: 'center',
         height: 200,
         // width:400,
-        width: 400,
+        // width: 400,
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
-        // flex:125
+        flex:1
     },
     badge:{ height: 17, width: 17 },
     dis: {
