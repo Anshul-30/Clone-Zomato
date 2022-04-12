@@ -107,6 +107,7 @@ const styles = StyleSheet.create({
     shadowOffset: {width: -2, height: 2},
     shadowOpacity: 0.2,
     shadowRadius: 3,
+    height:40,
         // elevation:3,
         justifyContent:'space-evenly'
     },
@@ -118,7 +119,8 @@ const styles = StyleSheet.create({
 
     },
     searchtxt1: {
-        height:25,
+        // height:25,
+        padding:5,
         fontSize: 12,
         width: '82%',
         color: 'black',
